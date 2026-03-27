@@ -1,12 +1,38 @@
 ---
 name: google-drive-gws-cli
-description: "Operate Google Drive from terminal using `gws` (`@googleworkspace/cli`): install and verify CLI, configure OAuth (`gws auth setup` or `gws auth login`), inspect method schemas (`gws schema drive.resource.method`), and execute Drive commands for files, folders, shared drives, and permissions. Use when the user asks to list, search, upload, download, share, move, copy, or delete Drive items with this CLI."
+description: "Operate Google Workspace from terminal using `gws` (`@googleworkspace/cli`): manage Drive, Docs, Sheets, Gmail, Calendar, Admin SDK, People, Forms, Chat, Apps Script, Vault, Classroom, and 25 total services. Use when the user asks to operate any Google Workspace service via CLI."
 ---
 
-# Google Drive Gws Cli
+# Google Workspace GWS CLI
 
-Use this skill whenever the user explicitly wants to operate Google Drive with the `gws` CLI.
+Use this skill whenever the user wants to operate any Google Workspace service with the `gws` CLI.
 Apply the lessons learned below by default.
+
+## Current Setup
+
+- **CLI:** gws 0.4.4
+- **OAuth project:** `stone-victor-365916` (owned by alecoleto@gmail.com)
+- **Default account:** `contato@manaca.tech` (Workspace Super Admin, domain manaca.tech)
+- **Other account:** `alecoleto@gmail.com`
+- **Domain users:** contato@manaca.tech (admin), rayssa@manaca.tech (admin), suporte@manaca.tech
+- **Customer ID:** C02qpzwdx
+
+### Active Scopes (27)
+
+drive, spreadsheets, gmail.modify, calendar, documents, presentations, tasks, pubsub, cloud-platform, contacts, directory.readonly, admin.directory.user, admin.directory.group, admin.reports.audit.readonly, admin.reports.usage.readonly, forms, forms.responses.readonly, script.projects, script.processes, chat.spaces, chat.messages, ediscovery, apps.groups.settings, cloud-identity.groups, classroom.courses, classroom.rosters, apps.licensing
+
+### NOT available (APIs not enabled in GCP project)
+
+- **Keep** (`auth/keep`) — enable Google Keep API in `stone-victor-365916`
+- **Alert Center** (`auth/apps.alerts`) — enable Alert Center API in `stone-victor-365916`
+
+### Re-authenticate with all scopes
+
+```bash
+gws auth login --account contato@manaca.tech --scopes "https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/spreadsheets,https://www.googleapis.com/auth/gmail.modify,https://www.googleapis.com/auth/calendar,https://www.googleapis.com/auth/documents,https://www.googleapis.com/auth/presentations,https://www.googleapis.com/auth/tasks,https://www.googleapis.com/auth/pubsub,https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/contacts,https://www.googleapis.com/auth/directory.readonly,https://www.googleapis.com/auth/admin.directory.user,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/forms,https://www.googleapis.com/auth/forms.responses.readonly,https://www.googleapis.com/auth/script.projects,https://www.googleapis.com/auth/script.processes,https://www.googleapis.com/auth/chat.spaces,https://www.googleapis.com/auth/chat.messages,https://www.googleapis.com/auth/ediscovery,https://www.googleapis.com/auth/apps.groups.settings,https://www.googleapis.com/auth/cloud-identity.groups,https://www.googleapis.com/auth/classroom.courses,https://www.googleapis.com/auth/classroom.rosters,https://www.googleapis.com/auth/apps.licensing"
+```
+
+Then open the URL manually with `start "" "<URL>"` (gws doesn't auto-open browser on this machine).
 
 ## Quick Start
 
@@ -44,13 +70,15 @@ gws auth list
 
 ```bash
 gws schema drive.files.list
-gws schema drive.files.create
+gws schema admin.users.list
+gws schema forms.forms.get
 ```
 
 3. Build command using explicit `--params` and `--json`.
-4. Confirm with user before write/delete commands.
-5. After write/delete, run a read-back verification and report resulting IDs/status.
-6. When the task is Google Docs content editing, prefer native Google Docs structures (headings, tables, lists) over markdown-like text formatting.
+4. Always use `--account contato@manaca.tech` for Workspace operations.
+5. Confirm with user before write/delete commands.
+6. After write/delete, run a read-back verification and report resulting IDs/status.
+7. When the task is Google Docs content editing, prefer native Google Docs structures (headings, tables, lists) over markdown-like text formatting.
 
 ## Command Patterns
 
@@ -82,6 +110,9 @@ Global flags to prefer:
 - `client_id` must end with `.apps.googleusercontent.com` and must not equal `client_secret`.
 - `gws auth setup` can require manual OAuth consent/client creation in Google Cloud Console, then run `gws auth login`.
 - If `gws auth list` is empty, authentication was not completed.
+- On this machine, `gws auth login` does NOT auto-open the browser. Capture the URL from output and open manually with `start "" "<URL>"`.
+- The `--full` flag only adds `pubsub` + `cloud-platform` to the default 7 scopes. For Workspace admin scopes (admin, people, forms, chat, etc.), use `--scopes` with explicit comma-separated list.
+- Scopes `auth/keep` and `auth/apps.alerts` cause `invalid_scope` error unless their APIs are enabled in the GCP project `stone-victor-365916`.
 - On some PowerShell environments (`gws 0.4.4`), `--params`/`--json` may fail with `Invalid --params JSON`. In this case:
   1. Re-check command shape with `gws schema ...`.
   2. Prefer helper commands when available (`gws docs +write`, `gws drive +upload`).
