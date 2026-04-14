@@ -27,11 +27,10 @@ Use this skill when the user mentions any of:
 | Setting | Value |
 |---------|-------|
 | Google email | alecoleto@gmail.com |
-| Template doc (copy source) | `1VwBbQV5-oihQ54CWYEKJsJxQHEjyy-_c8go0qqBJA_8` |
+| Template doc (copy source) | `1XrHyLz-Bgkhy6aQpp3q3x5yrh7mpo4MyB6ecRae3rCw` |
 | Template doc name | `TEMPLATE — Briefing Manacá` |
 | Existing briefings (reference) | `1sr0pkU6qiMV-QwDMV1GPBYbz1MKJ1P6oLrTOqMipQlE` |
-| Output folder ID | `1xtwx-wDVxlAhrs__XW95KQ19L_4Xgk9j` |
-| Output folder path | `07.00. Docs Manacá > Testes Agente Briefing` |
+| Output folder ID | `1qcOqGJHwrTvMMosIrCrDDOMgzbIs09D5` |
 
 ## Knowledge Base
 
@@ -163,9 +162,9 @@ For EACH approved briefing, create a separate Google Doc by copying the dedicate
 
 ```
 copy_drive_file(
-  file_id="1VwBbQV5-oihQ54CWYEKJsJxQHEjyy-_c8go0qqBJA_8",
+  file_id="1XrHyLz-Bgkhy6aQpp3q3x5yrh7mpo4MyB6ecRae3rCw",
   new_name="Briefing — {DATA} — {TEMA_SHORT}",
-  parent_folder_id="1xtwx-wDVxlAhrs__XW95KQ19L_4Xgk9j",
+  parent_folder_id="1qcOqGJHwrTvMMosIrCrDDOMgzbIs09D5",
   user_google_email="alecoleto@gmail.com"
 )
 ```
