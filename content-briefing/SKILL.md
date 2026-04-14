@@ -50,22 +50,41 @@ Load these reference files to inform briefing generation:
 
 ### Phase 0 — Input Collection
 
-1. The user provides a Google Doc URL containing the themes table.
-2. Extract the document ID from the URL.
-3. Read the document:
-   ```
-   get_doc_as_markdown(document_id=<id>, user_google_email="alecoleto@gmail.com")
-   ```
-   If the result is empty or minimal, try:
-   ```
-   get_doc_content(document_id=<id>, user_google_email="alecoleto@gmail.com")
-   ```
-4. Parse the themes table. Expected columns: **DATA | FORMATO | TEMA | LEGENDA**
-   - DATA: publication date
-   - FORMATO: Reels, Carrossel, Post único, Simples
-   - TEMA: content theme/title
-   - LEGENDA: caption text (may be empty)
-5. Each briefing will be output as a separate Google Doc (one per theme), named `Briefing — DD-MM — {Tema}` and saved to the output folder.
+The skill accepts themes from **multiple input sources**. Detect which path to use:
+
+#### Path A: Google Doc (MCP available)
+If `mcp__google-docs__get_doc_as_markdown` is available AND the user provides a Google Doc URL:
+1. Extract the document ID from the URL.
+2. Read with `get_doc_as_markdown`. If empty, try `get_doc_content`.
+3. Parse the themes table from the result.
+
+#### Path B: File upload or paste (MCP NOT available)
+If MCP Google Docs tools are NOT available, ask the user to provide the themes in one of these formats:
+1. **Copy-paste the table** directly in the chat (most common)
+2. **Excel/CSV file** — read with Python (`openpyxl` or `pandas`)
+3. **Text file (.txt / .md)** — read with the Read tool
+4. **Manual entry** — the user types themes one by one
+
+When asking, say:
+> "Não encontrei o MCP do Google Docs instalado. Você pode:
+> 1. Colar a tabela de temas aqui no chat
+> 2. Me passar um arquivo Excel (.xlsx) ou CSV com as colunas DATA | FORMATO | TEMA | LEGENDA
+> 3. Digitar os temas manualmente
+>
+> Qual prefere?"
+
+#### Parsing the themes table
+Expected columns: **DATA | FORMATO | TEMA | LEGENDA**
+- DATA: publication date
+- FORMATO: Reels, Carrossel, Post único, Simples
+- TEMA: content theme/title
+- LEGENDA: caption text (may be empty)
+
+The table can come in any format (Markdown table, tab-separated, CSV, pasted text). Parse flexibly — identify the columns by header names, not by position.
+
+#### Output mode
+- If MCP available → Google Docs output (one doc per briefing)
+- If MCP NOT available → Word .docx output (see Phase 3 Fallback)
 
 ### Phase 1 — Parse and Confirm
 
