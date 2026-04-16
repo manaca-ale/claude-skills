@@ -226,6 +226,49 @@ Google Docs são criados ao finalizar a produção, não durante o drafting.
 - **Trilha B:** Após integração (Fase 5e), criar cada documento narrativo, planilha e anexo no Drive
 - Sempre apresentar links do Drive ao usuário após cada documento criado
 
+### Estrutura-padrão da pasta do edital
+
+Toda pasta `NN. <Nome do Edital>` deve seguir este layout, pensado para quem vai **submeter**:
+
+```
+NN. <Nome do Edital>/
+├── 00. COMECE AQUI - Caderno de Preenchimento.gdoc   ← doc master (ver Fase 7)
+├── 1. UPLOADS para a plataforma/                     ← arquivos finais que sobem na plataforma
+├── 2. DRAFTS para transcrever e assinar/             ← fontes MD→GDoc + templates DOCX oficiais
+├── 3. REFERENCIA/                                    ← material de consulta (edital parsed, guia, auditorias)
+└── 4. POS-PRE-HABILITACAO/                           ← vazia; Anexos extras entram aqui SE passar de fase
+```
+
+Essa organização separa "o que sobe" (pasta 1) de "o que é fonte" (pasta 2) e de "o que é apoio" (pasta 3), evitando que a pessoa que submete precise adivinhar. Ver `editais/lab-procel/` como template de referência.
+
+### Convenção sobre documentos administrativos
+
+**NÃO duplicar** CNPJ, balanço patrimonial, contrato social, CNDs (Federal/Estadual/Municipal), CNDT, CRF/FGTS dentro da pasta do edital. Esses vivem em `03. Administrativo > 07.00` no Drive da Manacá e devem ser apenas **referenciados** no Caderno de Preenchimento (com instrução "puxar de lá na hora de anexar na plataforma").
+
+Motivo: docs administrativos têm versões canônicas que são atualizadas em cadência própria (certidões expiram a cada 180 dias). Duplicar cria risco de subir versão desatualizada.
+
+### Scripts de Drive (reutilizáveis)
+
+Três scripts em `scripts/` automatizam o setup da pasta do edital usando o token OAuth da skill `google-drive-envs` (não exige login de browser):
+
+```bash
+# 1. Upload inicial dos artefatos (cria subpasta NN. <nome> se não existe)
+python scripts/upload_to_drive.py \
+    --year-folder-id <ID_ano> \
+    --edital-name "<Nome do Edital>" \
+    --manifest manifest.json
+
+# 2. Reorganizar pasta em 4 subpastas (idempotente)
+python scripts/reorganize_drive.py \
+    --folder-id <ID_edital> \
+    --move-map move_map.json
+
+# 3. Atualizar conteúdo de Google Docs existentes (preserva fileId/link)
+python scripts/update_docs_content.py --manifest update_manifest.json
+```
+
+Detalhes de autenticação, gotchas (`supportsAllDrives=True` obrigatório em Shared Drive) e exemplos de manifest em `references/gotchas-editais.md`.
+
 ---
 
 ## ClickUp Integration (optional)
@@ -357,6 +400,8 @@ Ao avaliar Go/No-Go, responder:
    - **Anexos necessários:** Lista de documentos requeridos
    - **Requisitos de elegibilidade:** Requisitos-chave
 5. **Determinar trilha:** Classificar como Trilha A ou B (ver tabela de critérios acima)
+
+6. **Mapear a plataforma de submissão** — se a plataforma exige **login** para ver os campos dos formulários (ex.: Portal da Inovação da Indústria, SIGFAPES, SAGe), **pedir screenshots de cada aba ao usuário ANTES de redigir textos longos**. Campos desconhecidos descobertos tarde geram retrabalho (precisa revisitar textos que já tinham sido aprovados). Para cada aba, mapear em `01-edital-parsed.md`: nome do campo, tipo (dropdown/texto/textarea/upload), limite de caracteres, obrigatoriedade, e valor proposto.
 
 **Output:** `01-edital-parsed.md`
 
@@ -679,6 +724,28 @@ Cada gatilho acionado → bloqueador ou mitigação explícita antes de prossegu
 
 ### Fase 7: GUIA DE SUBMISSÃO (Submission Guide)
 
+> **Output primário desta fase:** o **"Caderno de Preenchimento"** — um Google Doc único consolidado na raiz da pasta do edital no Drive, nomeado `00. COMECE AQUI - Caderno de Preenchimento`. Esse é o doc que a pessoa que submete mantém aberto ao lado da plataforma e copia/cola os textos.
+
+#### Estrutura obrigatória do Caderno de Preenchimento (9 seções)
+
+1. **Prazo e plataforma** — deadline, URL, chamada a selecionar, link da pasta Drive
+2. **Ordem de submissão** — passo-a-passo numerado (abrir plataforma → preencher abas na ordem → revisar → submeter → salvar comprovante)
+3. **Textos para colar por aba** — bloco com o texto COMPLETO pronto para copiar para cada campo (nome da ideia, descrição, TRL, etc). Respeitar limite de caracteres documentado em `01-edital-parsed.md`.
+4. **Dados fixos da empresa** — CNPJ, porte, endereço, telefone (copiar de `references/empresa-manaca.md`)
+5. **Checklist de uploads** — tabela com cada doc, nome sugerido, status, localização (pasta 1 do edital OU `03. Administrativo > 07.00`)
+6. **Ações humanas pendentes** — lista numerada com responsável, prazo, status (gravar vídeo, assinar declaração, etc)
+7. **Placeholders que precisam dado humano** — CPFs, datas, assinaturas, imagens que não estão no workspace
+8. **Abas desconhecidas** — campos que só se vê logado (escalar com screenshots se a Fase 1 não cobriu)
+9. **Pós-submissão** — protocolo salvo, cronograma de fases seguintes do edital
+
+Ver `editais/lab-procel/00-caderno-preenchimento.md` como template de referência.
+
+#### Por que este doc é crítico
+
+Sem o Caderno, a equipe que submete precisa abrir 5+ docs diferentes, cada um com um pedaço do texto. Com o Caderno, é copy/paste sequencial. Reduz risco de errar campo ou esquecer upload.
+
+**Template detalhado abaixo é complementar** — fica no repo local como `07-submission-guide.md` e é a fonte do conteúdo do Caderno, mas o Caderno é o artefato que vai para o Drive.
+
 **Template obrigatório:**
 
 ```markdown
@@ -873,6 +940,14 @@ Detalhes completos em `references/meta-skill-versioning.md` §2.
 | Certidões têm validade de ~180 dias | Calcular expiração na Fase 2 e verificar se são válidas na data de contratação |
 | Auto-avaliação tende a ser generosa | Usar dois passes (advocate + red team) na Fase 6 |
 | Fase 5 gera arquivos temporários bagunçados | Seguir convenção de nomes rigorosa, zero `tmp_*` ou `chunk_*` |
+
+## Princípios Operacionais — Redação
+
+- **Português brasileiro formal com acentuação completa desde o primeiro rascunho.** Avaliadores de editais são humanos leitores de PT-BR; texto sem acentos sinaliza "descuido" antes mesmo da leitura do conteúdo. Corrigir depois é 10x mais caro (precisa reler tudo + atualizar Google Docs + arriscar perder links compartilhados).
+- **Nunca usar script de dicionário-cego para acentuar.** Substituições do tipo `{"marco": "março"}` quebram nomes próprios (ex.: "Marco Legal das Startups" virou "Março Legal" em produção). Se precisar corrigir muitos arquivos, use a função `update_docs_content.py` + Claude relendo e reescrevendo cada doc, não regex.
+- **Revisar antes de subir ao Drive.** Uma vez no Drive, o doc está "visível" para o cliente/time (link compartilhado no STATUS.md / ClickUp). Erros embaraçam e precisam ser corrigidos com `update_docs_content.py` preservando o fileId (não deletar+recriar, que quebra links).
+- **Registro técnico apropriado.** Terceira pessoa ou construções impessoais. Sem coloquialismos, sem adjetivos hiperbólicos.
+- **Quantificar tudo.** Tamanho de mercado, base de usuários, receita projetada, métricas de impacto. Números com formato brasileiro: `R$ 1.000.000,00`, `14 de abril de 2026`, `65%`.
 
 ## Princípios Operacionais — Equipe
 
