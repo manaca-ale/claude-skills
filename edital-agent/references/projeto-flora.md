@@ -1,3 +1,14 @@
+---
+last_verified: 2026-04-13
+next_review: 2026-07-13
+stale_fields:
+  - trl ([PREENCHER] pendente)
+  - stack_tecnologica ([PREENCHER] pendente)
+  - usuarios_ativos ([PREENCHER] pendente)
+  - registro_software_inpi ([PREENCHER] pendente)
+  - patente ([PREENCHER] pendente)
+---
+
 # Projeto Flora — Plataforma de Monitoramento e Gestão de Impacto
 
 ## Resumo
@@ -35,6 +46,76 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 |----------------|--------------------------|-----------------|
 | Sistema integrado com governança de dados e segurança da informação | Não possuem sistema integrado | Não possuem inteligência e evidências para comprovação de impacto real |
 | Abordagem 360° (estratégia + dados + impacto) | Foco fragmentado | Foco em compliance, não em impacto real |
+
+## ICP — Ideal Customer Profile (v0)
+
+**Tipo de organização ideal:** Organizações intermediárias e gestoras de portfólios de impacto socioambiental que precisam centralizar, mensurar e comunicar resultados.
+
+### 5 Segmentos Atendidos
+
+1. **Fundações e Institutos Empresariais** — Ex: Fundação Arymax, Instituto Sabin, Fundação Tide Setubal
+2. **Aceleradoras, Incubadoras e Redes de Impacto** — Ex: Quintessa, Artemisia, ICE, Sistema B
+3. **ONGs estruturadas e OSCs com múltiplos projetos** — Redes locais apoiadas por fundações
+4. **Organizações Públicas, Bancos de Fomento e Agências** — Ex: Sebrae, BNDES, secretarias estaduais
+5. **Empresas com Programas de ISP** — Corporações com institutos próprios ou programas ESG
+
+### Características do cliente ideal
+
+| Elemento | Descrição |
+|----------|-----------|
+| Setor principal | Impacto socioambiental, sustentabilidade, inovação social |
+| Tamanho médio | 10-200 colaboradores, múltiplos projetos simultâneos |
+| Maturidade digital | Intermediária (planilhas, ferramentas desconectadas) |
+| Necessidades centrais | Padronizar dados, automatizar relatórios, comunicar impacto |
+| Motivadores de compra | Pressão por resultados, eficiência, diferenciação competitiva |
+
+## Personas v0
+
+### Persona 1: Ana Paula — Gestora de Impacto
+- 38 anos, gerente/coordenadora em fundação ou incubadora
+- Formação em ciências sociais ou administração
+- **Dores:** dados vindos de diferentes parceiros, falta de equipe técnica, consultorias externas caras
+- **Motivações:** autonomia, mostrar resultados ao conselho/investidores, ferramentas práticas
+- **Comportamento:** LinkedIn, newsletters GIFE/ICE, eventos de inovação social
+
+### Persona 2: Gestora de Sustentabilidade (setor privado)
+- **Dor:** indicadores dispersos, falta de tempo para comprovar impacto ESG
+- **Busca:** resultados auditáveis, dashboards alinhados a GRI/ISSB/ODS
+
+### Persona 3: Coordenadora de Projetos (ONGs)
+- **Dor:** falta de equipe técnica, dificuldade de captar recursos com evidências
+- **Busca:** profissionalizar gestão de impacto, modelos prontos de TdM
+
+### Persona 4: Gestor Público
+- **Dor:** dados fragmentados entre secretarias
+- **Busca:** melhorar políticas públicas com base em evidências
+
+## Pricing
+
+| Plano | Valor |
+|-------|-------|
+| Consultoria (serviços) | A partir de R$ 3.000,00 |
+| Assinatura SaaS (básico) | R$ 49,90/mês |
+| Assinatura SaaS (completo) | R$ 299,00/mês |
+| Modelo | Freemium + consultoria + assinatura |
+
+## Concorrentes
+
+| Concorrente | Preço | Diferencial | Limitação |
+|-------------|-------|-------------|-----------|
+| Move Social | R$ 300/mês | Plataforma de gestão de projetos sociais | Funcionalidades simples, sem IA |
+| Sopact | $99/mês | Consultoria + plataforma cloud | Fora do Brasil, foco compliance |
+| Bússola Social | Sob consulta | Inteligência e personalização | Modelo consultoria, sem plataforma |
+| ChatGPT | ~R$ 120/mês | IA generativa genérica | Sem metodologia validada para impacto |
+
+**Diferencial Manacá/Flora:** IA generativa + rigor metodológico + foco Brasil + custo acessível + curadoria científica
+
+## Posicionamento de Marca
+
+- **Frase-síntese:** "Flora organiza a complexidade do impacto para apoiar decisões que importam."
+- **Definição:** Sistema de gestão de impacto orientado por dados
+- **Essência:** Dados com sensibilidade, impacto com método
+- **Identidade visual:** Formas orgânicas abstratas sobrepostas representando sistema vivo de dados; gradientes simbolizam integração; espaço entre formas comunica clareza e transparência
 
 ## Projetos Validados
 

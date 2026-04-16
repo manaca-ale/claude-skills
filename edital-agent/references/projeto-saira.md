@@ -1,3 +1,10 @@
+---
+last_verified: 2026-04-13
+next_review: 2026-07-13
+stale_fields:
+  - registro_software ([PREENCHER] pendente)
+---
+
 # Projeto SAÍRA — Sistema de Alerta Inteligente para Resíduos e Autuações
 
 ## Resumo
@@ -10,8 +17,34 @@ O SAÍRA é uma solução tecnológica híbrida para monitoramento, fiscalizaç�
 |-------|-------|
 | TRL | ~6 (MVP funcional com testes em ambiente controlado) |
 | Cliente principal | Prefeitura do Recife (via CPSI) |
-| Contrato | CPSI firmado, perspectiva de contrato final até R$ 8 milhões |
+| Contrato | CPSI firmado via inovação aberta, perspectiva de até R$ 8 milhões |
 | Tipo de cliente | B2G (Business to Government) |
+
+### CPSI — Contrato Público de Solução Inovadora
+
+| Campo | Valor |
+|-------|-------|
+| Marco legal | Lei Complementar nº 182/2021 (Marco Legal das Startups) |
+| Parceiros | Prefeitura do Recife + Manacá Tecnologias Sociais |
+| Modelo | Inovação aberta — chamada pública para startups |
+| Piloto | 10 pontos críticos, 10 câmeras, 10 bairros |
+| Bairros do piloto | Imbiribeira, Brasília Teimosa, Santo Amaro, Prado, Porto da Madeira, Arruda, Torrões, Várzea, Jiquiá, Campo Grande |
+| Fase 2 (previsão) | Escala para ~150 pontos cobertos |
+| Perspectiva de contrato | Até R$ 8 milhões |
+
+O CPSI permite ao poder público contratar startups para desenvolver, testar e validar soluções inovadoras ainda inexistentes no mercado, com segurança jurídica e foco em resultados. Rompe com a lógica tradicional de compras públicas, aproximando o Estado da experimentação e da inovação.
+
+### Status de Desenvolvimento (jan/2026)
+
+| Entrega | Status |
+|---------|--------|
+| Mockup alta fidelidade (Figma) | Validado |
+| Arquitetura de software | Desenhada e documentada |
+| Infraestrutura cloud (AWS) | Configurada |
+| Dataset v1.0 (10K+ imagens) | Preparado e categorizado |
+| Próxima fase | Desenvolvimento do backend |
+
+> Nota: Detalhes técnicos de arquitetura (AWS, YOLO, S3) ficam nos repos GitHub do projeto.
 
 ## Arquitetura da Solução
 

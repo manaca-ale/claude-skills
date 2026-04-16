@@ -1,3 +1,11 @@
+---
+last_verified: 2026-04-13
+next_review: 2026-07-13
+stale_fields:
+  - agencia_empreendedoras_tech ([CONFIRMAR] pendente)
+  - sementes_rio_doce ([CONFIRMAR] pendente)
+---
+
 # Histórico de Financiamentos e Editais — Manacá Tecnologias Sociais
 
 ## Editais Vencidos
@@ -63,8 +71,42 @@
 | Brazilian Startups Worldwide (FAPES) | Aguardando abertura | - |
 | Hangar Mulheres | Aguardando abertura | - |
 
+## Receita Anual e Projeções (atualizado mar/2026)
+
+| Ano | Faturamento | Captação Editais | Custos/Despesas | Margem |
+|-----|------------|-----------------|-----------------|--------|
+| 2022 | R$ 34.176,58 | R$ 0 | — | — |
+| 2023 | R$ 94.093,18 | R$ 130.000,00 | — | — |
+| 2024 | R$ 225.950,29 | R$ 0 | R$ 234.366,28 | 24% |
+| 2025 | R$ 125.630,17 | R$ 66.400,00 | R$ 208.854,14 | -7% |
+| **Total acumulado** | **R$ 567.491,48** | **R$ 255.600,00** | — | — |
+
+### Projeções 2026-2030
+
+| Ano | Faturamento Projetado | Captação Editais | Margem Projetada |
+|-----|----------------------|-----------------|-----------------|
+| 2026 | R$ 251.260,34 | R$ 99.600,00 | -34% (sem editais: 6% com) |
+| 2027 | R$ 502.520,68 | R$ 149.400,00 | 6% |
+| 2028 | R$ 1.005.041,36 | R$ 224.100,00 | Crescente |
+| 2029 | R$ 2.010.082,72 | R$ 336.150,00 | Crescente |
+| 2030 | R$ 4.020.165,44 | R$ 504.225,00 | Crescente |
+
+> **ALERTA:** Cenário pessimista projeta caixa negativo em jul/2026 sem novos contratos. Captação via editais é crítica para sustentabilidade financeira.
+
+### Detalhamento de Subvenção Captada
+
+| Edital | Ano | Valor |
+|--------|-----|-------|
+| Centelha 2 (FAPES) | 2023 | R$ 60.000,00 |
+| Negócios de Impacto Socioambiental (FAPES) | 2023 | R$ 69.660,00 |
+| Seedes (Neo Ventures) | 2025/2026 | R$ 100.000,00 |
+| Empreendedoras Tech (Sebrae/MDIC/ITA) | 2025/2026 | R$ 26.000,00 |
+| **Total subvenção** | | **R$ 255.660,00** |
+| Doação/premiação (Shell IJ) | 2024 | R$ 5.000,00 |
+
 ## Notas
 
 > Fonte principal: planilha "Editais e propostas 2025" no Drive (60+ editais rastreados).
 > Ao preencher propostas, sempre mencionar o histórico como evidência de capacidade de execução.
 > A captação de R$ 130k em 2023 corresponde a Centelha + NIS combinados.
+> Dados financeiros atualizados em abril/2026 com base em `manac-geral`.

@@ -1,3 +1,12 @@
+---
+last_verified: 2026-04-13
+next_review: 2026-07-13
+stale_fields:
+  - certidoes (emitidas fev/2026, expiram ~ago/2026)
+  - receita_2026 (atualizar trimestralmente)
+  - percentuais_socios ([CONFIRMAR] pendente)
+---
+
 # Manacá Tecnologias Sociais - Perfil da Empresa
 
 ## Dados Cadastrais
@@ -38,10 +47,10 @@
 A Manacá Tecnologias Sociais é uma startup de impacto que desenvolve soluções tecnológicas para monitoramento e gestão de impacto socioambiental, educacional e de sustentabilidade. Fundada no Startup Lab da USP, integra consultoria, mentoria, formações e, por meio da plataforma Flora, soluções SaaS para monitoramento e gestão de indicadores.
 
 ### Missão
-Apoiar organizações e iniciativas de impacto a gerar mudanças positivas em suas comunidades, no meio ambiente e no mundo, fornecendo evidências, estratégia e governança de dados.
+Potencializar iniciativas socioambientais fornecendo estratégia, evidências e governança de dados. Traduzir a complexidade estatística em clareza estratégica, permitindo que organizações mensurem, compreendam e ampliem seus resultados positivos.
 
 ### Visão
-Ser a principal referência no Brasil em estratégia de impacto e governança de dados, utilizando tecnologia e inovando na oferta de soluções e geração de evidências, dentro de 5 anos.
+Ser a principal referência no Brasil em estratégia de impacto e governança de dados, reconhecida por unir rigor científico, tecnologia acessível e inovação ética para fortalecer organizações, políticas públicas e iniciativas comprometidas com a transformação social e ambiental.
 
 ### Valores
 - Evidência e Transparência
@@ -56,15 +65,24 @@ Ser a principal referência no Brasil em estratégia de impacto e governança de
 |---------|-------|
 | Colaboradores | 6 |
 | Fundadores | 3 |
-| Clientes ativos | 7+ |
-| Municípios atendidos | 11 |
+| Clientes pagantes (Manacá consultoria) | 14 |
+| Clientes plataforma Flora (SaaS) | 1 (Bbutton, 2 projetos) |
+| Clientes recorrentes | 2 (Ensina Brasil, Bbutton) |
+| Projetos entregues | 19 |
+| Workshops/formações | 5 |
+| Municípios atendidos | 14 |
 | Estados atendidos | 8 |
 | Regiões do Brasil | 3 |
-| Investimentos recebidos (editais) | R$ 129.000,00 |
+| Investimentos recebidos (editais) | R$ 255.600,00 |
+| Faturamento total (até mar/2026) | R$ 567.491,48 |
 
 ## Atuação Geográfica
 
-Municípios: Alagoinhas, Vitória, Cariacica, Caucaia, Campo Grande, Cuiabá, Águas Lindas de Goiânia, Aparecida de Goiás, Luziânia, Caruaru, São Luís
+Municípios (14): Vitória, Cariacica, São Paulo, Rio de Janeiro, Belo Horizonte, Alagoinhas, Caruaru, Caucaia, São Luís, Campo Grande, Cuiabá, Águas Lindas de Goiás, Luziânia, Aparecida de Goiânia
+
+Estados (8): ES, BA, PE, MA, CE, MT, GO, MS
+
+Regiões (3): Sudeste, Nordeste, Centro-Oeste
 
 No Espírito Santo: parcerias com Cachoeiro de Itapemirim, Aracruz, Domingos Martins, ES em Ação, Impact Hub
 
@@ -121,31 +139,48 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 - AI4GOOD (Brazil Conference Harvard/MIT) - projeto ResiliêncIA
 - Programa Centelha ES
 - Programa Negócios de Impacto Socioambiental (ES)
+- Potência UP (Artemisia, 2025)
+- Seedes (Neo Ventures, 2025/2026)
+- Empreendedoras Tech (Sebrae Startups/MDIC/ITA, 2025/2026)
 
 ## Dados Financeiros
 
 | Campo | Valor |
 |-------|-------|
 | Regime tributário | Simples Nacional |
-| Receita bruta 2024 | R$ 225.950,29 |
-| Receita bruta 2023 | R$ 94.093,18 |
 | Receita bruta 2022 | R$ 34.176,58 |
+| Receita bruta 2023 | R$ 94.093,18 |
+| Receita bruta 2024 | R$ 225.950,29 |
 | Receita bruta 2025 (parcial) | R$ 125.630,17 |
+| Receita bruta 2026 (até mar) | R$ 87.641,26 |
+| Faturamento total acumulado | R$ 567.491,48 |
 | Custos/despesas 2024 | R$ 234.366,28 |
 | Margem 2024 | 24% |
 
 ### Captação via Editais
 | Ano | Valor captado |
 |-----|--------------|
-| 2023 | R$ 130.000,00 (Centelha ES + Negócios de Impacto FAPES combinados) |
-| 2025 | R$ 66.400,00 |
+| 2023 | R$ 130.000,00 (Centelha ES + NIS combinados) |
+| 2025 | R$ 126.000,00 (Seedes R$100K + ET R$26K) |
+| **Total captado em subvenção** | **R$ 255.600,00** |
 
-### Principais Clientes (2024)
-| Cliente | Valor | Tipo |
-|---------|-------|------|
-| Bracell Bahia | ~R$ 143.905 | Avaliação de impacto social |
-| Ensina Brasil | R$ 36.000 | Logística de pesquisas |
-| IAC | R$ 5.000 | Teoria de Mudança |
+### Principais Clientes (14)
+| Cliente | Tipo |
+|---------|------|
+| Ensina Brasil | Logística de pesquisas (recorrente desde 2022) |
+| Bracell | Avaliação de impacto social |
+| Suzano | Consultoria de impacto |
+| Pipe/Fundo Vale | Pesquisa negócios de impacto |
+| Instituto Arco | Teoria de Mudança |
+| Instituto Aprender Cultura (IAC) | Teoria de Mudança |
+| Sintetizo (Bridge) | Validação de metodologias |
+| Reciclo Social | Plataforma |
+| Maducria | Projeto de impacto |
+| Movimento Choice | Projeto de impacto |
+| Das Pretas | Projeto de impacto |
+| Prefeitura do Recife | CPSI - SAÍRA |
+| Bbutton | Consultoria (recorrente) |
+| Fundações e Molina | Consultoria |
 
 > **ATENÇÃO PARA EDITAIS:** O faturamento de 2024 (R$225k) fica abaixo do limiar de R$360k exigido por alguns editais (ex: FAPES Nova Economia Capixaba). Verificar elegibilidade financeira caso a caso.
 
@@ -155,6 +190,15 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 | 2026 | R$ 251.260,34 |
 | 2027 | R$ 502.520,68 |
 | 2028 | R$ 1.005.041,36 |
+
+### OKRs 2026
+| Objetivo | Meta |
+|----------|------|
+| Faturamento | R$ 250.000,00 |
+| Captação de recursos | R$ 150.000,00 |
+| Novos clientes | 4 |
+| Assinaturas Flora | 10 |
+| Prêmios/reconhecimentos | Pelo menos 1 |
 
 ## Certidões e Documentos
 
@@ -190,3 +234,21 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 - Prefeitura de Domingos Martins
 - Programa Cidades Resilientes
 - Fundo Cidades / ES 500 anos
+
+## Impacto Quantificado
+
+| Métrica | Valor |
+|---------|-------|
+| Redes de ensino impactadas | 23 |
+| Professores impactados | 839 |
+| Gestores impactados | 261 |
+| Estudantes impactados | 41.406 |
+| Negócios de impacto pesquisados | 114 |
+| Teorias de Mudança elaboradas/revisadas | 5 |
+
+## Depoimentos de Clientes
+
+1. "O monitoramento realizado pela Manacá na rede municipal de Educação de Cachoeiro contemplará um estudo mais aprofundado da aplicabilidade da metodologia nas escolas, seus impactos nos processos de ensino e aprendizagem." — Luciano Gollner, Superintendente Executivo do ES em Ação
+2. "O apoio da Manacá foi fundamental para nos trazer mais clareza sobre como a nossa atuação irá ajudar a formar as futuras lideranças capazes de promoverem mudanças no ecossistema educacional brasileiro." — Vinicius Oliveira, Coordenador de Avaliação e Monitoramento do Ensina Brasil
+3. "Desde 2022, a Manacá tem sido uma parceira indispensável nesse processo, tornando uma tarefa complexa mais eficiente e ágil. Neste ano, ela gerenciou com excelência a operação em 7 polos do Ensina Brasil, distribuídos por 6 estados, alcançando mais de 6 mil estudantes." — Denise dos Santos, Coordenadora de Operações do Ensina Brasil
+4. "Poder visualizar todo o trabalho desenvolvido pelo IAC e os caminhos possíveis para alcançar os objetivos foi muito fundamental no processo com a Manacá porque nós tivemos um melhor entendimento do caminho." — MiQ Gonçalves, Diretor Fundador do Instituto Aprender Cultura

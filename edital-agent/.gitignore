@@ -1,0 +1,7 @@
+.skill-sync.log
+.DS_Store
+*.log
+*.bak
+__pycache__/
+.env
+*.key
