@@ -1,10 +1,9 @@
 ---
-last_verified: 2026-04-13
-next_review: 2026-07-13
+last_verified: 2026-04-19
+next_review: 2026-07-19
 stale_fields:
   - certidoes (emitidas fev/2026, expiram ~ago/2026)
   - receita_2026 (atualizar trimestralmente)
-  - percentuais_socios ([CONFIRMAR] pendente)
 ---
 
 # Manacá Tecnologias Sociais - Perfil da Empresa
@@ -28,7 +27,9 @@ stale_fields:
 | Segmento | Negócio de Impacto Socioambiental |
 | Telefone comercial | (21) 98799-1064 |
 | Telefone cadastral | (11) 6303-8185 |
-| Email comercial | contato@manaca.tech |
+| Email comercial | contato@manaca.net.br |
+| Email institucional (antigo) | contato@manaca.tech |
+| Email da dirigente (Rayssa) | rayssa@manaca.net.br |
 | Email cadastral | rayssamendes2611@gmail.com |
 | Site | https://manaca.tech/ |
 | Instagram | @manaca.socialtech |
@@ -36,11 +37,18 @@ stale_fields:
 | CNAE Principal | 58.19-1-00 - Edição de cadastros, listas e de outros produtos gráficos |
 | CNAEs Secundários relevantes | 72.20-7-00 (P&D ciências sociais), 85.99-6-04 (Treinamento profissional) |
 
-### Sócios (2 — Ângelo Viana saiu da sociedade)
-| Sócio | Cargo | Participação |
-|-------|-------|-------------|
-| Rayssa Pereira Mendes do Nascimento | CEO | Majoritária [CONFIRMAR %] |
-| Alexandre Henrique Azevedo Coleto | CTO | Minoritário [CONFIRMAR %] |
+### Sócios (2 — Ângelo Viana saiu da sociedade em 05/09/2025)
+
+Composição confirmada pelo contrato social consolidado em 11/09/2025 (JUCEES, NIRE 32203432394):
+
+| Sócio | Cargo | Participação | Quotas | CPF | Nascimento |
+|-------|-------|-------------|--------|-----|------------|
+| Rayssa Pereira do Nascimento Mendes | CEO / Administradora | 65% | 650 | 355.300.408-88 | 26/04/1991 |
+| Alexandre Henrique Azevedo Coleto | CTO / Administrador | 35% | 350 | 410.048.868-88 | 10/07/1991 |
+
+**Capital social:** R$ 1.000,00 dividido em 1000 quotas de R$ 1,00 cada.
+**Administração isolada:** ambos os sócios podem representar a empresa independentemente.
+**Etnia/cor da principal empreendedora (Rayssa):** Branca.
 
 ## Sobre a Empresa
 
@@ -164,6 +172,31 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 | 2025 | R$ 126.000,00 (Seedes R$100K + ET R$26K) |
 | **Total captado em subvenção** | **R$ 255.600,00** |
 
+### Custos Fixos (estimativa para formulários quantitativos)
+
+Consultar [classificacao-financeira-editais.md](classificacao-financeira-editais.md) para regras de enquadramento. Valores em base anual:
+
+| Rubrica | 2024 (R$) | 2025 (R$) | Observação |
+|---|---|---|---|
+| Salários (CLT) | 0 | 0 | Sem funcionários CLT |
+| Pró-labore | 12.000 | 132.000 | Alexandre R$ 1k/mês + Rayssa R$ 10k/mês a partir de 2025 (recomendação: reclassificar "retirada de lucro" para pró-labore) |
+| Aluguel / Luz / Água / Telefone | 0 | 0 | Operação 100% remota |
+| Outros | ~47.000 | ~78.500 | Contabilidade (R$ 556/mês), softwares, admin, marketing, assistente PJ, viagens |
+| **Total custos fixos** | **~59.000** | **~210.500** | — |
+
+### Receita produto vs. consultoria (classificação para Critério "% de receita com novos produtos")
+
+| Ano | Faturamento total | Produto (SAÍRA + Flora) | Consultoria | % produto |
+|---|---|---|---|---|
+| 2023 | R$ 94.093 | 0 | 100% | 0% |
+| 2024 | R$ 225.950 | 0 | 100% | 0% |
+| 2025 | R$ 125.630 | 0 | 100% | 0% |
+| 2026 (expectativa) | R$ 251.260 | ~R$ 100k | ~R$ 150k | **40%** |
+| 2027 (projeção) | R$ 502.520 | ~R$ 300k | ~R$ 200k | **60%** |
+| 2028 (projeção) | R$ 1.005.041 | ~R$ 750k | ~R$ 255k | **75%** |
+
+Framing: **transição bootstrapped → produto**. 2026 marca o pivot formal. SAÍRA CPSI (Prefeitura do Recife) e Flora (Bbutton + Arco) contam como produto. Ver [classificacao-financeira-editais.md](classificacao-financeira-editais.md) §5 para regra de classificação.
+
 ### Principais Clientes (14)
 | Cliente | Tipo |
 |---------|------|
@@ -221,10 +254,14 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 
 | Item | Status |
 |------|--------|
-| Registro de software (Flora/SAÍRA) | Em andamento no INPI |
-| Registro de marca "Manacá" | Em andamento no INPI |
+| Registro de software (Flora/SAÍRA) | Em processo de depósito no INPI |
+| Registro de marca "Manacá" | Em processo de depósito no INPI |
+| Registro de marca "SAÍRA" | Em processo de depósito no INPI |
+| Registro de marca "Flora" | Em processo de depósito no INPI |
 | Domínio manaca.tech | Registrado (dez/2024) |
 | Domínio manaca.net | Registrado (dez/2024) |
+
+**Para formulários que perguntam "A empresa utiliza proteção da Propriedade Intelectual?":** responder **Sim** e complementar com narrativa de que os registros estão em processo de depósito, código-fonte protegido por direito autoral (Lei 9.610/98) e acordos de confidencialidade com desenvolvedores PJ.
 
 ## Parcerias Estratégicas no ES
 - ES em Ação

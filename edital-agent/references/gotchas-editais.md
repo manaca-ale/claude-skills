@@ -151,6 +151,86 @@ Sempre extrair do mapeamento da plataforma (não do edital oficial, que pode omi
 
 **Dica:** gravar os limites em `01-edital-parsed.md` para validação automática dos textos gerados antes de copiar para a plataforma.
 
+### 4.3 Playwright substitui screenshots manuais
+
+Desde 2026-04, a abordagem canônica é mapear o formulário com Playwright em vez de pedir screenshots ao usuário. Ver [mapeamento-formularios-playwright.md](mapeamento-formularios-playwright.md) para o workflow completo.
+
+**Quando cair no fluxo antigo (screenshots):** só se o Playwright CLI não estiver disponível (raro) ou se a plataforma tiver anti-bot muito agressivo (CAPTCHA por etapa, etc.).
+
+### 4.4 FINEP FAP exige título da proposta ANTES de abrir o formulário
+
+No FAP (forms.finep.gov.br), a linha do edital na lista "Iniciar Inscrição" tem **um textbox pequeno** ("Informe um título para a proposta") e um botão "Iniciar Inscrição". Clicar no botão sem preencher o textbox NÃO abre o form — apenas volta sem erro visível.
+
+**Workaround:** preencher o textbox com título provisório (editável depois dentro do form) e só então clicar. Formulário abre em nova aba do browser.
+
+### 4.5 Editais FINEP regionais: escolher o formulário correto
+
+Programas como Mulheres Inovadoras e Centelha têm **formulários separados por região** (Centro-Oeste / Nordeste / Norte / Sudeste / Sul). Escolher conforme o **estado da sede do CNPJ**.
+
+| UF da sede | Região | Formulário FAP |
+|---|---|---|
+| ES, MG, RJ, SP | Sudeste | "... - REGIÃO SUDESTE" |
+| BA, PE, CE, MA, PI, RN, PB, AL, SE | Nordeste | "... - REGIÃO NORDESTE" |
+| PR, SC, RS | Sul | "... - REGIÃO SUL" |
+| AC, AM, AP, PA, RO, RR, TO | Norte | "... - REGIÃO NORTE" |
+| DF, GO, MT, MS | Centro-Oeste | "... - REGIÃO CENTRO-OESTE" |
+
+**Custo de errar:** a inscrição é invalidada; não há como transferir proposta entre regiões. A Manacá (sede em Vitória-ES) é **Sudeste**.
+
+---
+
+## 7. Dados da empresa — fonte de verdade
+
+### 7.1 Contrato social pode estar desatualizado em references/
+
+`references/empresa-manaca.md` é baseline, mas alterações contratuais recentes (saída de sócio, mudança de %, mudança de sede) podem não ter sido refletidas ainda.
+
+**Sempre confirmar antes de declarar em formulário:**
+- Composição societária (% de cada sócio)
+- Endereço da sede
+- Capital social
+- Objeto social (CNAEs)
+
+**Como validar:** baixar PDF mais recente do contrato social (Drive ou local) e conferir. Para Manacá, o contrato consolidado mais recente é `ALTERACAO 11.09.2025.pdf` (JUCEES NIRE 32203432394) — Rayssa 65% / Alexandre 35%, sem mais o Angelo.
+
+**Fonte:** sessão Mulheres Inovadoras 2026-04-19 — STATUS.md estava com "Rayssa 45% / Alexandre 27,5%" (composição antiga com Angelo) e tivemos que corrigir em cima da hora.
+
+### 7.2 Planilhas financeiras da empresa
+
+Quando precisar de faturamento, custos, fluxo de caixa para um formulário quantitativo, pedir ao usuário os xlsx locais:
+
+- `Receitas e Projeções.xlsx` — faturamento por ano (real + projeção)
+- `Planejamento <ano>.xlsx` — orçamento planejado vs. real, breakdown mensal
+- `Planejamento Financeiro e Estratégico Manaca -<ano1>_<ano2>.xlsx` — fluxo de caixa detalhado, item por item
+
+Ler com `openpyxl` + `data_only=True`. A skill `spreadsheet` tem helpers mais sofisticados.
+
+**Google Sheets da Rayssa:** algumas planilhas estão em conta pessoal da Rayssa (`manaca-ale` sem acesso). Nesses casos, pedir xlsx local em vez de forçar compartilhamento.
+
+---
+
+## 8. WebFetch vs Playwright
+
+### 8.1 manaca.tech retorna 403 via WebFetch
+
+Quando precisar extrair infos do site institucional (telefone, email, social media):
+
+```
+WebFetch(url="https://manaca.tech", prompt="...")
+→ "Request failed with status code 403"
+```
+
+**Workaround:** usar Playwright:
+
+```bash
+export PWCLI="$HOME/.codex/skills/playwright/scripts/playwright_cli.sh"
+"$PWCLI" tab-new https://manaca.tech
+"$PWCLI" snapshot
+# depois Grep no arquivo .yml por "mailto:", "wa.me", "linkedin.com/company", etc.
+```
+
+Custo: ~20 segundos a mais, mas funciona. Considerar o mesmo padrão para outros sites institucionais com anti-bot.
+
 ---
 
 ## 5. ClickUp

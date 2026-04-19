@@ -401,7 +401,7 @@ Ao avaliar Go/No-Go, responder:
    - **Requisitos de elegibilidade:** Requisitos-chave
 5. **Determinar trilha:** Classificar como Trilha A ou B (ver tabela de critérios acima)
 
-6. **Mapear a plataforma de submissão** — se a plataforma exige **login** para ver os campos dos formulários (ex.: Portal da Inovação da Indústria, SIGFAPES, SAGe), **pedir screenshots de cada aba ao usuário ANTES de redigir textos longos**. Campos desconhecidos descobertos tarde geram retrabalho (precisa revisitar textos que já tinham sido aprovados). Para cada aba, mapear em `01-edital-parsed.md`: nome do campo, tipo (dropdown/texto/textarea/upload), limite de caracteres, obrigatoriedade, e valor proposto.
+6. **Mapear a plataforma de submissão** — se a plataforma exige **login** para ver os campos dos formulários (ex.: FINEP FAP, Portal da Inovação da Indústria, SIGFAPES, SAGe), **invocar o workflow Playwright** descrito em [references/mapeamento-formularios-playwright.md](references/mapeamento-formularios-playwright.md). Output: `07-form-fields.md` (Trilha A) ou integrar em `01-edital-parsed.md` (Trilha B). Campos desconhecidos descobertos tarde geram retrabalho (precisa revisitar textos que já tinham sido aprovados). Para cada aba, capturar: nome do campo, tipo (dropdown/texto/textarea/upload), limite de caracteres, obrigatoriedade, opções de combobox e texto integral de declarações Sim/Não.
 
 **Output:** `01-edital-parsed.md`
 
@@ -583,6 +583,8 @@ Preencher todos os campos factuais/mecânicos:
 - CVs narrativos da equipe (3-5 linhas por membro, conectando formação ao desafio do projeto)
 - Histórico financeiro e de financiamentos
 - Certidões e documentos legais
+
+**Para questões financeiras com precisão regulatória** (faturamento vs captação, pró-labore vs retirada de lucro, reembolso de sócios, custos fixos em empresa remota, % de produto inovador): consultar [references/classificacao-financeira-editais.md](references/classificacao-financeira-editais.md) ANTES de preencher.
 
 **Ação crítica:** Flaggar todo `[PREENCHER]` e `[CONFIRMAR]` encontrado nos arquivos de referência. Apresentar lista ao usuário para resolução ANTES de continuar.
 
