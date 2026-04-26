@@ -1,6 +1,16 @@
 ---
 last_verified: 2026-04-13
 next_review: 2026-07-13
+type: data
+canonical_for:
+  - equipe_cvs_detalhados
+  - equipe_emails
+  - equipe_telefones
+  - equipe_lattes
+  - equipe_idiomas
+  - equipe_publicacoes
+derived_from:
+  - empresa-manaca.md  # nomes_e_percentuais_socios sempre validar contra empresa-manaca
 stale_fields:
   - lattes_urls ([PREENCHER] pendente para todos os membros)
 ---

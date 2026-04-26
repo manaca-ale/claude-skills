@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Mapeamento de Formulários Online via Playwright
 
 > Workflow reutilizável para mapear formulários de submissão de editais que exigem login (FINEP FAP, SAGe/CNPq, SIGFAPES, Carambola, Portal da Inovação da Indústria, plataformas de FAPs estaduais).

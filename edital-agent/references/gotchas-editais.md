@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Gotchas — Editais e Integrações
 
 > Pegadinhas descobertas em produção durante execução real de editais. Consultar antes de investir tempo debugando o que já foi resolvido.
@@ -193,7 +199,7 @@ Programas como Mulheres Inovadoras e Centelha têm **formulários separados por 
 
 **Como validar:** baixar PDF mais recente do contrato social (Drive ou local) e conferir. Para Manacá, o contrato consolidado mais recente é `ALTERACAO 11.09.2025.pdf` (JUCEES NIRE 32203432394) — Rayssa 65% / Alexandre 35%, sem mais o Angelo.
 
-**Fonte:** sessão Mulheres Inovadoras 2026-04-19 — STATUS.md estava com "Rayssa 45% / Alexandre 27,5%" (composição antiga com Angelo) e tivemos que corrigir em cima da hora.
+**Fonte:** sessão Mulheres Inovadoras 2026-04-19 — STATUS.md estava com a composição antiga (pré-saída do Angelo, percentuais diferentes dos atuais 65/35) e tivemos que corrigir em cima da hora. **Atualização (Lab Procel 2026-04-26):** o mesmo padrão se repetiu — `equipe.md` tinha nome invertido e percentual antigo até hoje quando rodamos `validate_facts.py` e detectamos a divergência.
 
 ### 7.2 Planilhas financeiras da empresa
 

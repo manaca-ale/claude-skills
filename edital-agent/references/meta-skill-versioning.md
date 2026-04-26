@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Meta: Versionamento Contínuo da Skill (GitHub Sync)
 
 **Propósito:** esta skill evolui a cada edital processado. Para que todo o aprendizado se acumule (e não se perca), ela é versionada em https://github.com/manaca-ale/claude-skills e se auto-sincroniza em duas pontas da execução.

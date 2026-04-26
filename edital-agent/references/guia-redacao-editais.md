@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Guia de Redacao para Propostas de Editais de Inovacao
 
 Referencia pratica para o agente de redacao. Consulte este documento ao redigir qualquer secao de proposta para editais FINEP, FAPESP, EMBRAPII, FAPs estaduais e programas correlatos.

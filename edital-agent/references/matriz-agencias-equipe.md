@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Matriz de Agências — Regras de Equipe e Gatilhos de Red-Flag
 
 **Uso:** consultado pelo agente `edital-agent` na Fase 02 (elegibilidade) para extrair exigências específicas da agência/tipo de edital; e na Fase 04 (document-plan) para escolher a variante de formato de CV.

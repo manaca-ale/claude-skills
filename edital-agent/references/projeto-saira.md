@@ -1,6 +1,15 @@
 ---
 last_verified: 2026-04-13
 next_review: 2026-07-13
+type: data
+canonical_for:
+  - saira_descricao
+  - saira_trl
+  - saira_clientes
+  - saira_stack_tecnologica
+  - saira_cpsi_recife
+  - saira_ativos_reusaveis
+derived_from: []
 stale_fields:
   - registro_software ([PREENCHER] pendente)
 ---
@@ -105,3 +114,21 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 - ODS 12: Consumo e Produção Responsáveis
 - ODS 13: Ação contra a Mudança Global do Clima
 - ODS 3: Saúde e Bem-Estar
+
+## Ativos Reutilizáveis
+
+Materiais já produzidos do SAÍRA que podem ser reaproveitados em editais futuros (vídeos, imagens, decks, PDFs branded). Quando um edital pede pitch/visual/dossiê, conferir aqui antes de criar do zero.
+
+| Tipo | Descrição | Caminho/Link |
+|------|-----------|--------------|
+| Vídeo pitch (5min) | Pitch Connectec Smart Cities 2026 — reaproveitado no Lab Procel | https://youtube.com/shorts/1BsqAtBzpEE |
+| Cover branded | Logo SAÍRA wordmark verde-limão sobre fundo verde-oliva | `c:/Editais/editais/lab-procel/SAIRA-cover-lab-procel.jpg` |
+| Diagrama arquitetura | Hardware (BXP/ESP32) → 4G → SAIRA Server → YOLO+Gemini → Postgres+Redis → Frontend | `c:/saira/diagram_arquitetura.png` |
+| Imagem campo (detecção) | Captura real de câmera com bounding-box do YOLO em descarte irregular | `c:/saira/artifacts/dashboard_replacements/2026-03-09-prod/lixo_exemplo.png` |
+| Pitch deck | SAIRA-PitchDeck-Hicool2026.pptx — usado no Latam-China Tech | `c:/Editais/editais/latam-china-tech-2026/SAIRA-PitchDeck-Hicool2026.pptx` |
+| BMC (Anexo 3 branded) | Business Model Canvas em papel timbrado Manacá (gerado via reportlab) | `c:/Editais/editais/lab-procel/BMC-SAIRA-Manaca-Lab-Procel.pdf` |
+| Material apoio CSC | Dossiê visual com 4 figuras (YOLO, dashboard, ficha, mapa Recife) | `c:/Editais/editais/premio-csc-2026/SAIRA_Material_Apoio_CSC2026.pdf` |
+| Dossiê impacto Josué Castro | PDF impacto socioambiental | `c:/Editais/editais/premio-josue-castro-2026/Dossie_Impacto_SAIRA_JosueCastro2026.pdf` |
+| Sumário executivo CSC | Markdown estruturado pronto para reuso | `c:/Editais/editais/premio-csc-2026/sumario-executivo-saira.md` |
+
+**Convenção:** ao reaproveitar um ativo, copiar para o diretório do novo edital (não link cross-projeto). Atualizar esta tabela quando produzir asset novo significativo (cover, vídeo, deck, imagem hero).

@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Guia de Redação — Seção de Equipe em Editais
 
 **Uso:** referência operacional do agente `edital-agent` nas fases 02, 03, 04, 05c, 06.

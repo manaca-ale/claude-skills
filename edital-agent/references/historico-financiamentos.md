@@ -1,6 +1,12 @@
 ---
 last_verified: 2026-04-13
 next_review: 2026-07-13
+type: data
+canonical_for:
+  - historico_editais_inscritos
+  - historico_editais_aprovados
+  - valores_captados_por_edital
+derived_from: []
 stale_fields:
   - agencia_empreendedoras_tech ([CONFIRMAR] pendente)
   - sementes_rio_doce ([CONFIRMAR] pendente)

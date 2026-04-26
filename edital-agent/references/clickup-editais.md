@@ -1,6 +1,12 @@
 ---
 last_verified: 2026-04-14
 next_review: 2026-07-14
+type: data
+canonical_for:
+  - clickup_workspace_ids
+  - clickup_lista_editais_id
+  - clickup_status_editais
+derived_from: []
 ---
 
 # ClickUp — Editais Integration Reference

@@ -1,6 +1,14 @@
 ---
 last_verified: 2026-04-13
 next_review: 2026-07-13
+type: data
+canonical_for:
+  - flora_descricao
+  - flora_trl
+  - flora_clientes
+  - flora_stack_tecnologica
+  - flora_ativos_reusaveis
+derived_from: []
 stale_fields:
   - trl ([PREENCHER] pendente)
   - stack_tecnologica ([PREENCHER] pendente)
@@ -177,3 +185,13 @@ A Flora se posiciona na interseção de:
 | Patentes | [PREENCHER] |
 | Marca registrada | [PREENCHER] |
 | Código-fonte | Proprietário da Manacá |
+
+## Ativos Reutilizáveis
+
+Materiais já produzidos do Flora que podem ser reaproveitados em editais futuros (vídeos, imagens, decks, PDFs branded). Quando um edital pede pitch/visual/dossiê, conferir aqui antes de criar do zero.
+
+| Tipo | Descrição | Caminho/Link |
+|------|-----------|--------------|
+| _(placeholder)_ | _Adicionar conforme produzir ativos para Flora_ | _[PREENCHER]_ |
+
+**Convenção:** ao reaproveitar um ativo, copiar para o diretório do novo edital (não link cross-projeto). Atualizar esta tabela quando produzir asset novo significativo (cover, vídeo, deck, imagem hero).

@@ -1,6 +1,19 @@
 ---
 last_verified: 2026-04-26
 next_review: 2026-07-26
+type: data
+canonical_for:
+  - cnpj
+  - razao_social
+  - endereco
+  - composicao_societaria
+  - socios_nomes_e_cpfs
+  - faturamento
+  - certidoes
+  - balanco
+  - contrato_social
+  - drive_admin_docs_paths
+derived_from: []
 stale_fields:
   - certidoes_curta_validade (Municipal vence 25/06/2026; FGTS vence 25/05/2026 — renovar antes da Habilitacao Lab Procel 30/05-05/06)
   - cnd_estadual (vence 13/05/2026 — renovar se necessario)

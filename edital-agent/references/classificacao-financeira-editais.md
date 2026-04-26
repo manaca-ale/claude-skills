@@ -1,3 +1,9 @@
+---
+type: guide
+canonical_for: []
+derived_from: []
+---
+
 # Classificação Financeira em Formulários de Editais
 
 > Decisões financeiras recorrentes em formulários quantitativos (FINEP FAP, FAPs estaduais, subvenção). Complementa [matriz-agencias-equipe.md](matriz-agencias-equipe.md) — aquela cobre regras por agência (quem pode receber pró-labore, etc.); este documento cobre **como classificar cada valor** nos campos do formulário.
