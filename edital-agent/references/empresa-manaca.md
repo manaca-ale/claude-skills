@@ -1,8 +1,9 @@
 ---
-last_verified: 2026-04-19
-next_review: 2026-07-19
+last_verified: 2026-04-26
+next_review: 2026-07-26
 stale_fields:
-  - certidoes (emitidas fev/2026, expiram ~ago/2026)
+  - certidoes_curta_validade (Municipal vence 25/06/2026; FGTS vence 25/05/2026 — renovar antes da Habilitacao Lab Procel 30/05-05/06)
+  - cnd_estadual (vence 13/05/2026 — renovar se necessario)
   - receita_2026 (atualizar trimestralmente)
 ---
 
@@ -242,13 +243,22 @@ Framing: **transição bootstrapped → produto**. 2026 marca o pivot formal. SA
 | CNDT (Justiça do Trabalho) | 12/02/2026 | 01. certidão débitos trabalhistas.pdf |
 | CND Estadual (SEFAZ-ES) | 12/02/2026 | 02. certidão estadual.pdf |
 | CND Federal (Receita + PGFN) | 12/02/2026 | 03. certidão federal.pdf |
-| CND Municipal (Vitória) | 12/02/2026 | 04. certidão municipal.pdf |
-| CRF (FGTS) | 20/02/2026 | Certificado de Regularidade do FGTS - CRF.pdf |
+| CND Municipal (Vitória) | 26/04/2026 (vence 25/06/2026) | CND-Municipal-Vitoria-2026-04-26.pdf |
+| CRF (FGTS) | 26/04/2026 (vence 25/05/2026) | CRF-FGTS-Caixa-2026-04-26.pdf |
 | Contrato Social (última alteração) | 11/09/2025 | ALTERACAO 11.09.2025.pdf |
 | DRE 2024 (assinado) | mar/2025 | MANACA DRE 2024-assinado.pdf |
 | Balanço 2024 | mar/2025 | BALANCO MANACA 2024.PDF |
 
-**Localização no Drive:** `03. Administrativo > 07.00. Docs Manacá > 01. ME` e `04. Certidões`
+**Localização no Drive:**
+
+- Pasta `03. Administrativo` (raiz dos docs administrativos): https://drive.google.com/drive/folders/1_hN6dZCrNtBKEEs6DzSKE02pypryZOd0
+- Subpasta `07.00. Docs Manacá` (id `1-qeKNWvjc858emq2DiOJ9n1l8UnJxiub`):
+  - `01. ME` — CNPJ, contrato social/alteração, balanço, DRE, dispensa alvará, etc.
+    - DRE/2024: `BALANCO E DRE 2024.PDF` (id `1x_N34WOUABAwENZvPI6nKGnWUdAtbcxD`) — combina balanço + DRE
+    - `ALTERACAO 11.09.2025.pdf` (id `1FvLGyjmOoneLlPpvlqqYL1dPuObQ0fGB`)
+  - `04. Certidões` (id `1NenvaRIxY0r9FGL7ZUr_vtbZMNz1rF2-`) — CNDT, Estadual, Federal, Municipal, FGTS
+
+**Nota:** certidões fiscais (Municipal, FGTS) costumam ter validade curta (30-180 dias). Sempre verificar `last_verified` deste arquivo + abrir o PDF e checar campo "Validade até" antes de submeter.
 
 ## Propriedade Intelectual
 
