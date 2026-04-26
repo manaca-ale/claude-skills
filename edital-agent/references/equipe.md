@@ -9,7 +9,7 @@ stale_fields:
 
 ## Sócios-Fundadores
 
-### Rayssa Pereira Mendes do Nascimento — CEO (45%)
+### Rayssa Pereira do Nascimento Mendes — CEO (65%)
 - **Gênero:** Feminino
 - **Email:** rayssa@manaca.net.br
 - **Telefone:** (11) 996303-8185
@@ -45,7 +45,7 @@ stale_fields:
 
 ---
 
-### Alexandre Henrique Azevedo Coleto — Co-CTO (27,5%)
+### Alexandre Henrique Azevedo Coleto — Co-CTO (35%)
 - **Email:** contato@manaca.tech / alecoleto@gmail.com
 - **Telefone:** (11) 97093-8184
 - **CPF:** 410.048.868-88
