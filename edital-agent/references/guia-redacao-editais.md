@@ -4,30 +4,32 @@ canonical_for: []
 derived_from: []
 ---
 
-# Guia de Redacao para Propostas de Editais de Inovacao
+# Guia de Redação para Propostas de Editais de Inovação
 
-Referencia pratica para o agente de redacao. Consulte este documento ao redigir qualquer secao de proposta para editais FINEP, FAPESP, EMBRAPII, FAPs estaduais e programas correlatos.
+> **NOTA (2026-04-26):** este guia tem ~230 palavras sem acentuação completa do legacy (foi escrito antes da regra de "acentuação desde primeiro rascunho"). O conteúdo é válido — está pendente de uma passada de cleanup textual. **Mais importante:** ao escrever propostas novas, siga a regra do `SKILL.md > Princípios de Escrita PT-BR` (acentuação completa desde o primeiro draft, nunca pós-corrigir). O título, os cabeçalhos e a tabela abaixo já foram corrigidos como exemplo.
+
+Referência prática para o agente de redação. Consulte este documento ao redigir qualquer seção de proposta para editais FINEP, FAPESP, EMBRAPII, FAPs estaduais e programas correlatos.
 
 ---
 
 ## 1. Estrutura da Narrativa
 
-Toda proposta segue um arco argumentativo unico. Cada secao deve alimentar a proxima de forma causal.
+Toda proposta segue um arco argumentativo único. Cada seção deve alimentar a próxima de forma causal.
 
-**Fluxo obrigatorio:**
+**Fluxo obrigatório:**
 
-Problema (quantificado) --> Estado da Arte (lacuna tecnica) --> Solucao Proposta (inovacao) --> Metodologia de P&D --> Equipe e Capacidade --> Viabilidade Economica e Impacto
+Problema (quantificado) → Estado da Arte (lacuna técnica) → Solução Proposta (inovação) → Metodologia de P&D → Equipe e Capacidade → Viabilidade Econômica e Impacto
 
-### Regras por secao
+### Regras por seção
 
-| Secao | Objetivo | Deve conter |
+| Seção | Objetivo | Deve conter |
 |---|---|---|
-| Problema | Convencer que a dor e real e mensuravel | Dados de institutos (IBGE, IPEA, MAPA), cifras de perda, numero de afetados |
-| Estado da Arte | Provar que solucoes existentes falham | Mapeamento de concorrentes diretos e indiretos, limitacoes tecnicas especificas |
-| Solucao | Descrever a inovacao e o risco tecnologico | Arquitetura tecnica, algoritmos, diferencial frente ao estado da arte |
-| Metodologia | Detalhar como o risco sera superado | Frameworks, modelos matematicos, datasets, testes planejados, metricas de sucesso |
-| Equipe | Demonstrar capacidade de execucao | Curriculos narrativos, triada ciencia+mercado+gestao |
-| Viabilidade | Provar ida ao mercado | TAM/SAM/SOM, modelo de receita, cartas de intencao, early adopters |
+| Problema | Convencer que a dor é real e mensurável | Dados de institutos (IBGE, IPEA, MAPA), cifras de perda, número de afetados |
+| Estado da Arte | Provar que soluções existentes falham | Mapeamento de concorrentes diretos e indiretos, limitações técnicas específicas |
+| Solução | Descrever a inovação e o risco tecnológico | Arquitetura técnica, algoritmos, diferencial frente ao estado da arte |
+| Metodologia | Detalhar como o risco será superado | Frameworks, modelos matemáticos, datasets, testes planejados, métricas de sucesso |
+| Equipe | Demonstrar capacidade de execução | Currículos narrativos, tríade ciência+mercado+gestão |
+| Viabilidade | Provar ida ao mercado | TAM/SAM/SOM, modelo de receita, cartas de intenção, early adopters |
 
 ### Anti-padroes
 

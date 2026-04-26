@@ -276,3 +276,42 @@ Para ver só mudanças da skill (ignorando outras skills do monorepo):
 cd ~/.claude/skills
 git status --porcelain edital-agent/
 ```
+
+## 9. Lições Lab Procel (2026-04-26)
+
+### 9.1 Single source of truth nas referências (`canonical_for`)
+
+**Quando dois ou mais arquivos `references/*.md` declaram o mesmo dado** (ex: nome da CEO, percentual societário, CNPJ), as versões DIVERGEM ao longo do tempo. Caso real (Lab Procel, abr/2026): `equipe.md` tinha o nome da CEO com os sobrenomes na ordem errada e o percentual antigo da composição pré-saída do Angelo, enquanto `empresa-manaca.md` tinha o nome correto e o split atual 65/35.
+
+**Solução:** convenção `canonical_for` no frontmatter YAML. Cada arquivo de dado declara explicitamente para quais campos é fonte de verdade. Arquivos derivados marcam `derived_from: <fonte>.md`.
+
+**Validador automático:** `python scripts/validate_facts.py --refs` detecta colisões + variantes erradas conhecidas. Rodar em Fase 2.5 (já documentada no SKILL.md).
+
+### 9.2 Validar certidões em Fase 2 (não em Fase 7)
+
+CND/CRF têm validade curta (Municipal/FGTS = 30-180 dias). Caso real Lab Procel: descobrimos que CND Municipal e CRF/FGTS estavam VENCIDAS só DEPOIS do merge unificado e do upload na plataforma — retrabalho de download → re-emitir → re-merge → re-upload no último minuto.
+
+**Regra:** ao iniciar Fase 2 (Elegibilidade), abrir cada PDF de CND/CRF do Drive e extrair o campo "Validade até". Se vencida ou expirando antes da data de Habilitação/contratação, sinalizar como bloqueador antes de prosseguir.
+
+```python
+from pypdf import PdfReader
+import re
+r = PdfReader('CND-04-Municipal.pdf')
+text = ' '.join((p.extract_text() or '').replace(chr(10), ' ') for p in r.pages)
+m = re.search(r'v[áa]lid[ao]\s+at[eé]?[^\n]{0,80}', text, re.IGNORECASE)
+print(m.group(0) if m else 'CRF (image-only PDF, abrir manualmente)')
+```
+
+### 9.3 Critique o deliverable, não o notepad
+
+Caso real Lab Procel: rodei Phase 6 review contra `cvs-equipe-projeto.md` (markdown longo Vitae 2pg) e flaguei R8 como ATIVO. Mas o deliverable real era o PDF gerado pelo `generate_cvs_pdf.py` em formato corporativo 1pg — já estava perfeito. O markdown era só notepad.
+
+**Regra:** Phase 6 (Quality Review) sempre opera sobre o **output final** que vai ao avaliador (PDF gerado, Google Doc final), não sobre rascunhos markdown intermediários. Se houver dúvida sobre qual é o deliverable, conferir com `07-submission-guide.md` ou `00-caderno-preenchimento.md`.
+
+### 9.4 Ativos reusáveis indexados em `projeto-*.md`
+
+Caso real Lab Procel: vídeo do Connectec Smart Cities foi reaproveitado como pitch. Sem índice, isso depende de memória — fácil de perder, fácil de produzir do zero outra vez.
+
+**Regra:** cada `projeto-*.md` (saira, flora, futuros) tem uma seção "Ativos Reutilizáveis" com tabela de vídeos, decks, imagens hero, dossiês PDF anteriores, com caminho/link. Quando produzir asset novo significativo (cover, vídeo, deck, imagem hero), atualizar o índice. Antes de criar novo asset para edital, conferir o índice primeiro.
+
+Ao reaproveitar um asset, **copiar para o diretório do novo edital** (não link cross-projeto, evita quebra quando o original move).

@@ -139,6 +139,30 @@ Todas as fases são obrigatórias.
 
 ---
 
+## Princípios de Escrita PT-BR (regras INVIOLÁVEIS)
+
+**Tudo que esta skill produz é em português brasileiro completo, com acentuação correta desde o primeiro rascunho.** Acentos não são "polish final" — são parte da escrita. Pular acentos é pular qualidade.
+
+### Regras
+
+1. **Sempre escrever com acentuação completa.** Nada de "Manaca", "Saira", "Vitoria", "eficiencia energetica", "residuos", "visao computacional", "operacao", "execucao". Sempre Manacá, SAÍRA, Vitória, eficiência energética, resíduos, visão computacional, operação, execução. **Não é opcional.**
+2. **UTF-8 sempre.** Arquivos `.md`, `.py`, `.json` salvos em UTF-8. Em Python: `open(path, encoding='utf-8')` em todas as leituras/gravações; `PYTHONIOENCODING=utf-8` quando rodar scripts em terminal Windows. Em PDF (reportlab): registrar fontes com suporte unicode completo (Sora família já registrada nos scripts de geração).
+3. **Sem dicionário-cego de pós-processamento.** Substituir "Manaca" → "Manacá" no fim quebra "Marco" → "Março" e nomes próprios. Não tente corrigir depois — escreva certo desde o primeiro draft.
+4. **Vocabulário canônico** (não-exaustivo, expandir conforme aparecer): Manacá Tecnologias Sociais, SAÍRA, Flora, Vitória-ES, Recife, eficiência energética, gestão de resíduos, visão computacional, ResiliêncIA, AI4GOOD, Petrobrás (ou Petrobras — ambos válidos), Politécnica/Poli-USP, ENBPar, Procel, Currículos, Justiça, organização, reorganização, Sistema, está/estão, são, têm, há, três, série, índice, métricas, número.
+5. **Plataformas externas (formulários web)**: ao colar texto em formulários, garantir que o input aceita UTF-8. A maioria das plataformas brasileiras aceita; quando não aceitar, o usuário decide (escapar para HTML entities ou aviso de quebra).
+
+### Backstop (não substitui as regras acima)
+
+Se mesmo com tudo isso passar bola, há um script de detecção que pode rodar opcionalmente como sanity check antes de gerar PDF/upload Drive:
+
+```bash
+python C:/Users/aleco/.claude/skills/edital-agent/scripts/accent_guard.py <arquivo.md>
+```
+
+Não é obrigatório. Se for usado, **apenas sinaliza** (não corrige). A correção real é sempre reescrever o trecho aplicando a regra #1.
+
+---
+
 ## Output: Local-First
 
 **Output primário:** Arquivos locais em `c:\Editais\editais\<slug>\` para todo drafting, iteração e referência.
@@ -457,6 +481,26 @@ _Consultar `matriz-agencias-equipe.md` e copiar a coluna da agência identificad
 - Temos ICT parceira pronta (se necessária)? ✅/⚠️/❌ — se não, qual o plano?
 
 **Output:** `02-eligibility.md`
+
+### Fase 2.5: VALIDAÇÃO DE FATOS CANÔNICOS (Data Validation) — mandatória
+
+Pré-flight check automatizado para evitar invenção/inconsistência de dados nas referências antes de começar a produção. Caso real (Lab Procel, abr/2026): nome da Rayssa estava como "Rayssa Pereira Mendes do Nascimento" (45%) em `equipe.md` e "Rayssa Pereira do Nascimento Mendes" (65%) em `empresa-manaca.md` — composição pré-saída do Angelo. O nome errado vazou para a Declaração de Responsabilidade.
+
+**Como rodar:**
+
+```bash
+python C:/Users/aleco/.claude/skills/edital-agent/scripts/validate_facts.py --refs
+```
+
+**O que faz:**
+- Lê todas as `references/*.md` e parseia frontmatter `canonical_for`
+- Detecta colisões (mesmo campo declarado canônico em >1 arquivo)
+- Detecta variantes erradas conhecidas (nome Rayssa, percentuais antigos pré-Angelo, CNPJ)
+- Exit code != 0 se houver divergência
+
+**Bloqueador:** se `validate_facts --refs` retornar erro, NÃO avançar para Fase 3 antes de resolver. Atualizar a fonte canônica (`empresa-manaca.md`) e propagar correção para arquivos que derivam dela.
+
+**Output:** `02b-data-validation.md` (registrar status do check + ações tomadas).
 
 ### Fase 3: SUGESTÃO DE PROJETO (Project Suggestion)
 
