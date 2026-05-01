@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-04-26
-next_review: 2026-07-26
+last_verified: 2026-05-01
+next_review: 2026-08-01
 type: data
 canonical_for:
   - cnpj
@@ -15,9 +15,9 @@ canonical_for:
   - drive_admin_docs_paths
 derived_from: []
 stale_fields:
-  - certidoes_curta_validade (Municipal vence 25/06/2026; FGTS vence 25/05/2026 — renovar antes da Habilitacao Lab Procel 30/05-05/06)
+  - certidoes_curta_validade (Municipal vence 25/06/2026; FGTS vence 25/05/2026 — renovar URGENTE)
   - cnd_estadual (vence 13/05/2026 — renovar se necessario)
-  - receita_2026 (atualizar trimestralmente)
+  - receita_2026 (atualizar trimestralmente — ultimo update mai/2026)
 ---
 
 # Manacá Tecnologias Sociais - Perfil da Empresa
@@ -85,24 +85,28 @@ Ser a principal referência no Brasil em estratégia de impacto e governança de
 
 | Métrica | Valor |
 |---------|-------|
-| Colaboradores | 6 |
-| Fundadores | 3 |
+| Equipe fixa total | 7 (2 sócios + 5 colaboradores fixos) |
+| Sócios-fundadores | 2 (Rayssa CEO, Alexandre CTO) — após saída Ângelo em 05/09/2025 |
+| Colaboradores fixos | 5 (3 nomeados em equipe.md + 2 a confirmar) |
+| Consultores acionáveis por projeto | 2 (Ângelo Viana, Luan Orion) |
+| Diversidade declarada | 71% mulheres; 1 colaborador autodeclarado negro; 2 LGBTQIA+ autodeclarados |
 | Clientes pagantes (Manacá consultoria) | 14 |
-| Clientes plataforma Flora (SaaS) | 1 (Bbutton, 2 projetos) |
+| Clientes plataforma Flora (SaaS) | 1 (Bbutton, 2 projetos) — primeiros clientes SaaS em validação |
 | Clientes recorrentes | 2 (Ensina Brasil, Bbutton) |
-| Projetos entregues | 19 |
+| Projetos entregues | 19+ |
 | Workshops/formações | 5 |
 | Municípios atendidos | 14 |
-| Estados atendidos | 8 |
+| Estados atendidos | 11 |
 | Regiões do Brasil | 3 |
 | Investimentos recebidos (editais) | R$ 255.600,00 |
-| Faturamento total (até mar/2026) | R$ 567.491,48 |
+| Faturamento total (até mai/2026) | R$ 646.915,17 |
+| Crescimento médio anual | 140% |
 
 ## Atuação Geográfica
 
-Municípios (14): Vitória, Cariacica, São Paulo, Rio de Janeiro, Belo Horizonte, Alagoinhas, Caruaru, Caucaia, São Luís, Campo Grande, Cuiabá, Águas Lindas de Goiás, Luziânia, Aparecida de Goiânia
+Municípios (14): Vitória (ES), Cariacica (ES), São Paulo (SP), Rio de Janeiro (RJ), Belo Horizonte (MG), Alagoinhas (BA), Caruaru (PE), Caucaia (CE), São Luís (MA), Campo Grande (MS), Cuiabá (MT), Águas Lindas de Goiás (GO), Luziânia (GO), Aparecida de Goiânia (GO)
 
-Estados (8): ES, BA, PE, MA, CE, MT, GO, MS
+Estados (11): ES, SP, RJ, MG, BA, PE, CE, MA, MS, MT, GO
 
 Regiões (3): Sudeste, Nordeste, Centro-Oeste
 
@@ -152,18 +156,29 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 - **Terceiro Setor:** ONGs/OSCs com acesso a tecnologias de mensuração de impacto
 
 ## Programas de Aceleração e Reconhecimentos
-- Startup Lab da USP
-- Future Females Business School
-- Ideiaz
-- Inovativa de Impacto
-- Acelera
-- Shell Iniciativa Jovem
-- AI4GOOD (Brazil Conference Harvard/MIT) - projeto ResiliêncIA
-- Programa Centelha ES
-- Programa Negócios de Impacto Socioambiental (ES)
-- Potência UP (Artemisia, 2025)
-- Seedes (Neo Ventures, 2025/2026)
-- Empreendedoras Tech (Sebrae Startups/MDIC/ITA, 2025/2026)
+
+**Reconhecimentos e Selos (cronologico mais recente primeiro):**
+- Selo "Projeto com Propósito" — PMI-ES (2026)
+- Seleção Portal Impacta Brasil — MDIC, celeiro de soluções da COP30 (2025)
+- Selo de Negócio Sustentável — Shell Iniciativa Jovem (2025)
+- Prêmio de Impacto Social AI4GOOD — Brazil Conference at Harvard/MIT (2025) — projeto ResiliêncIA
+- Selo Impact Hub — Prêmio Impacta Espírito Santo (2025)
+
+**Programas de Aceleração e Capacitação (cronológico mais antigo primeiro):**
+- Startup Lab da USP (2020)
+- Future Females Business School / UK Tech Hub (2021)
+- Inovativa de Impacto — MDIC (2022)
+- IdeiaZ (2022)
+- Programa Centelha ES — FAPES/SECTI-ES (2023)
+- Programa Negócios de Impacto Socioambiental (FAPES 09/2022) (2023)
+- RME Acelera (2023)
+- Shell Iniciativa Jovem (2024)
+- Potência UP — Artemisia (2025)
+- Seedes — Neo Ventures (2025)
+- Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA (2025)
+- AI4GOOD — Brazil Conference Harvard/MIT (2025) — competição vencedora
+- ACE Ventures / FUNSES (2025)
+- BNDES Garagem (2025)
 
 ## Dados Financeiros
 
@@ -174,10 +189,21 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 | Receita bruta 2023 | R$ 94.093,18 |
 | Receita bruta 2024 | R$ 225.950,29 |
 | Receita bruta 2025 (parcial) | R$ 125.630,17 |
-| Receita bruta 2026 (até mar) | R$ 87.641,26 |
-| Faturamento total acumulado | R$ 567.491,48 |
+| Receita bruta 2026 (até mai) | R$ 167.064,00 |
+| Faturamento total acumulado (até mai/2026) | R$ 646.915,17 |
+| Crescimento médio anual | 140% |
 | Custos/despesas 2024 | R$ 234.366,28 |
 | Margem 2024 | 24% |
+
+### Detalhamento Q1 2026 (mês a mês)
+
+| Mês | Faturamento |
+|-----|-------------|
+| Jan/2026 | R$ 15.000,00 |
+| Fev/2026 | R$ 50.516,00 |
+| Mar/2026 | R$ 23.525,26 |
+| **Total Q1 2026** | **R$ 89.041,26** |
+| Abr-Mai/2026 | R$ 78.022,74 (acumulado) |
 
 ### Captação via Editais
 | Ano | Valor captado |

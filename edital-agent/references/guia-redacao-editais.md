@@ -336,3 +336,298 @@ Cada membro deve ter um paragrafo de 3-5 linhas que:
 | Adequacao Orcamentaria / Cronograma | Eliminatorio se inconsistente | Alta |
 
 **Regra de ouro:** Antes de submeter, localize no edital a tabela de pesos e redistribua o esforco de redacao e contagem de caracteres proporcionalmente.
+
+---
+
+## 13. Exemplos Canônicos — Inscrições Submetidas pela Rayssa (abr/2026)
+
+Esta seção compila trechos retirados de 3 inscrições reais da Manacá em editais relevantes (PES 2026, WOW Aceleradora Batch #34, Prêmio Sebrae Startups 2026). São padrões de redação que **funcionaram** em formulários de prêmios e aceleração em pt-BR. Use como base estilística e estrutural quando precisar redigir campos análogos.
+
+> **Localização das fontes originais:** `c:\Editais\01. Submetidos\` (subpastas com regulamento, respostas e link do Drive).
+
+### 13.1 Perfil curto do empreendedor (PES 2026 Q17)
+
+**Quando usar:** campos de "perfil/biografia executiva" em prêmios de empreendedorismo, formulários de aceleração, sites institucionais.
+
+**Estrutura:** formação acadêmica → trajetória de impacto → projetos liderados na Manacá → reconhecimentos → links sociais.
+
+**Exemplo (Rayssa Mendes):**
+
+> Rayssa Pereira do Nascimento Mendes é cientista social, historiadora e empreendedora dedicada a democratizar o uso de dados para a transformação socioambiental. Com bacharelado e mestrado em Ciências Sociais (PUC-SP), graduação em História (USP) e MBA em Gestão de Projetos (USP/Esalq), acumula mais de uma década de experiência em pesquisa e avaliação de impacto junto a instituições como UNICEF, Banco Mundial, Fundação Lemann e Itaú Social.
+>
+> Sua trajetória é marcada pela vivência na ponta, tendo atuado como professora em escolas públicas pelo programa Ensina Brasil e na gestão pública pela Secretaria de Cultura do Espírito Santo, via programa da Vetor/Motriz Brasil. Essas experiências revelaram um gargalo crítico: a dificuldade de organizações e governos em mensurar e comprovar resultados reais, o que motivou a fundação da Manacá Tecnologias Sociais em 2022.
+>
+> À frente da Manacá, Rayssa lidera o desenvolvimento de soluções tecnológicas inovadoras, como a Flora (SaaS) e o Saíra (CPSI Recife). Sob sua liderança, a Manacá recebeu o Selo de Negócio Sustentável da Shell Iniciativa Jovem e foi premiada no AI4GOOD da Brazil Conference (Harvard & MIT) pelo projeto ResiliêncIA.
+
+### 13.2 Descrição do desafio + solução inovadora (PES 2026 Q23)
+
+**Quando usar:** campos de "qual problema sua iniciativa resolve" / "qual a inovação proposta".
+
+**Estrutura:** contexto quantificado → metodologia diferencial → produto âncora → laboratório PD&I.
+
+**Exemplo:**
+
+> O Brasil possui milhares de organizações, fundos e governos gerando impacto, mas a maioria esbarra em um gargalo crítico: a falta de inteligência, tecnologia e governança de dados para comprovar resultados. Sem estruturar evidências claras, perde-se financiamento e formulam-se políticas ineficientes para desafios urgentes, como as mudanças climáticas e a gestão de resíduos sólidos.
+>
+> A Manacá resolve essa dor atuando na interseção entre inovação tecnológica e transformação socioambiental. Nossa abordagem inovadora está na metodologia: nós traduzimos o rigor científico e a complexidade estatística para soluções de dados acessíveis e escaláveis. Diferente de consultorias genéricas, entregamos inteligência de impacto contínua, unindo metodologias consagradas (como a Teoria de Mudança) à Engenharia de Software e IA.
+>
+> Para dar escala a essa metodologia, desenvolvemos a Flora, nossa plataforma central (SaaS). Além disso, a Manacá atua como um laboratório de inovações contínuas (PD&I) para resolver complexidades territoriais. Desse braço nascem tecnologias específicas, como o Saíra, o ResiliêncIA e o BT Tracker.
+
+### 13.3 Atuação e projetos em andamento (PES 2026 Q24)
+
+**Quando usar:** campos de "como sua iniciativa atua" ou "projetos em andamento".
+
+**Estrutura:** eixos numerados → clientes citados linha-a-linha com 1 frase de contexto.
+
+**Exemplo:**
+
+> 1. **Plataforma Flora e Gestão de Impacto (SaaS e Consultoria Estratégica)**: nossa principal frente. Centraliza modelos lógicos, biblioteca de evidências, dashboards interativos e relatórios automatizados.
+>    - Bbutton: aceleradora de negócios, cliente recorrente que potencializa o crescimento de seu portfólio.
+>    - Bracell: estudo de impacto do portfólio de Investimento Social Privado.
+>    - Ensina Brasil: gestão logística e análise de indicadores recorrente desde 2022, impactando mais de 41 mil estudantes.
+>    - Fundo Vale e Pipe Social: estudo de impacto com 114 negócios apoiados.
+>    - Arco Instituto e Instituto Aprender Cultura: estruturação de Teoria da Mudança.
+>
+> 2. **Tecnologias Territoriais e Inovação Aberta (Saíra e PD&I)**: soluções para cidades sustentáveis.
+>    - Saíra (Recife): Contrato Público de Solução Inovadora (CPSI) com a Prefeitura. MVP cobrirá até 10 pontos críticos com câmeras inteligentes e visão computacional.
+>    - PD&I: ResiliêncIA e BT Tracker, ambos premiados no AI4GOOD da Brazil Conference.
+
+### 13.4 Resultados quantificados (PES 2026 Q25)
+
+**Quando usar:** campo de "principais resultados" em prêmios e aceleradoras.
+
+**Estrutura hierárquica obrigatória:** ALCANCE E ESCALA → IMPACTO QUANTIFICADO → CRESCIMENTO FINANCEIRO → CAPTAÇÃO VIA EDITAIS → RECONHECIMENTOS → ACELERAÇÕES.
+
+**Exemplo:**
+
+> ALCANCE E ESCALA
+> - 14 municípios atendidos em 11 estados e 3 regiões: Vitória/ES, Cariacica/ES, São Paulo/SP, Rio de Janeiro/RJ, Belo Horizonte/MG, Alagoinhas/BA, Caruaru/PE, Caucaia/CE, São Luís/MA, Campo Grande/MS, Cuiabá/MT, Águas Lindas de GO, Luziânia/GO, Aparecida de Goiânia/GO
+> - 14 clientes pagantes, 19 projetos entregues, 5 workshops/formações
+> - Primeiros clientes SaaS na plataforma Flora
+> - 7 colaboradores fixos, equipe majoritariamente feminina (71%)
+>
+> IMPACTO QUANTIFICADO
+> - 23 redes de ensino impactadas
+> - 41.406 estudantes impactados
+> - 839 professores impactados
+> - 261 gestores impactados
+> - 114 negócios de impacto pesquisados
+> - 5 Teorias de Mudança elaboradas/revisadas
+>
+> CRESCIMENTO FINANCEIRO
+> - Faturamento: R$ 34.176 (2022) → R$ 94.093 (2023) → R$ 225.950 (2024) → R$ 125.630 (2025) → R$ 167.064 (2026 até mai)
+> - Faturamento total acumulado: R$ 646.915
+> - Crescimento médio anual: 140%
+> - Margem operacional: 24%
+>
+> CAPTAÇÃO VIA EDITAIS
+> - Total captado em subvenção: R$ 255.600
+> - Centelha ES + NIS (FAPES, 2023): R$ 130.000
+> - Seedes / Neo Ventures (2025): R$ 100.000
+> - Empreendedoras Tech / Sebrae/MDIC/ABDI/ITA (2025): R$ 26.000
+>
+> RECONHECIMENTOS
+> - Selo "Projeto com Propósito" — PMI-ES (2026)
+> - Prêmio de Impacto Social AI4GOOD — Brazil Conference at Harvard/MIT (2025)
+> - Selo de Negócio Sustentável — Shell (2025)
+> - Seleção Portal Impacta Brasil — MDIC, celeiro de soluções da COP30 (2025)
+>
+> ACELERAÇÕES
+> - Potência UP (Artemisia), Seedes (Neo Ventures), Empreendedoras Tech (Sebrae/MDIC), Centelha ES (FAPES, 2023)
+> - Shell Iniciativa Jovem (2024), RME Acelera (2023), Future Females (2021)
+> - Inovativa de Impacto (2022), Startup Lab USP (2020)
+
+### 13.5 Capacidade executora (Sebrae Startups Q5)
+
+**Quando usar:** campo "como o time de fundadores foi formado" / "capacidade executora".
+
+**Estrutura:** sinergia entre formações + papel de cada sócio + complementaridade.
+
+**Exemplo:**
+
+> A Manacá nasceu para unir o rigor do impacto socioambiental à escalabilidade da tecnologia de ponta. Formamos um time multidisciplinar de alta densidade técnica, focado em transformar dados complexos em decisões estratégicas.
+>
+> A liderança é exercida pela CEO Rayssa Mendes (cientista social PUC-SP/USP), que aporta sua sólida experiência em avaliação de impacto junto a organismos de referência, como UNICEF, Banco Mundial e Fundação Lemann, garantindo precisão metodológica.
+>
+> A frente tecnológica é liderada pelo CTO Alexandre Coleto (engenheiro Poli-USP e PMP), especialista em arquitetura de software, automação SaaS e gestão de projetos complexos.
+>
+> O time de execução conta ainda com especialistas em Operações (Rafaela Reis), focada em eficiência de processos e indicadores, e Produto/UX (Gabrielle Alves), que assegura a usabilidade e a entrega de valor centrada no usuário.
+>
+> Essa sinergia entre Ciências Sociais, Engenharia e Design permite que a Manacá entregue soluções robustas e escaláveis, consolidando uma capacidade executora diferenciada no setor de impacto.
+
+### 13.6 Vantagem competitiva (Sebrae Startups Q6)
+
+**Estrutura:** três frentes de concorrentes (consultoria + plataformas + IA genérica) → 5 diferenciais Manacá numerados.
+
+**Exemplo:**
+
+> Nosso cenário competitivo divide-se em três frentes: consultorias tradicionais (ex: Move Social), que oferecem rigor mas são lentas e de alto custo; plataformas de gestão (Bússola Social, Sopact), que organizam dados mas exigem expertise analítica do cliente; e IA genérica (ChatGPT), que carece de segurança de dados e método científico.
+>
+> Nossa vantagem competitiva reside em unir o melhor desses mundos: entregamos a precisão metodológica das grandes consultorias por meio de uma plataforma SaaS automatizada.
+>
+> Nossos principais diferenciais são:
+> 1. **IA Explicável (XAI):** A Flora não apenas armazena dados, mas interpreta e gera relatórios confiáveis e auditáveis automaticamente.
+> 2. **Aderência local + LGPD:** Integração nativa com bases públicas brasileiras (IBGE, AdaptaBrasil) e total segurança e privacidade de dados.
+> 3. **Custo-benefício:** Democratizamos a inteligência de impacto com uma operação até 80% mais acessível que os modelos tradicionais.
+> 4. **Abordagem 360°:** Estratégia + dados + impacto, vs. soluções fragmentadas.
+> 5. **Validação enterprise:** Suzano, Bracell, Prefeitura do Recife (CPSI).
+
+### 13.7 Maior desafio e como superou (PES 2026 Q27)
+
+**Estrutura:** narrativa em primeira pessoa, com 3 frentes de superação numeradas.
+
+**Exemplo:**
+
+> O maior desafio à frente da Manacá foi me consolidar como fundadora — mulher, cientista social e empreendedora de primeira viagem — sem capital inicial e em um mercado nacional que não é orientado a dados e pouco valoriza impacto socioambiental.
+>
+> Operamos em bootstrapping entre 2022 e 2023. Com faturamento inicial de apenas R$ 34 mil, o dilema era financiar a operação e a tecnologia simultaneamente. A saída estratégica foi equilibrar a venda de consultorias (geração de caixa) com o desenvolvimento da plataforma Flora (visão de longo prazo).
+>
+> O avanço para o Saíra exigiu incorporar IA e visão computacional, áreas fora da minha formação. Contornei isso usando o vesting: estruturei um modelo societário atrativo para atrair talentos e especialistas de ponta engajados pelo propósito. Para romper a barreira de entrada no setor público (B2G), utilizamos o Contrato Público de Solução Inovadora (CPSI) e o Marco Legal das Startups, inserindo nossa tecnologia estrategicamente via desafios de inovação aberta.
+>
+> Para superar esses obstáculos, atuei em três frentes:
+> 1. **Validação estratégica:** busca ativa por grandes acelerações e editais de inovação, visando capital não-diluível, parcerias e chancela institucional.
+> 2. **Casos de Sucesso:** foco em gerar resultados rápidos para os primeiros clientes, consolidando a prova de conceito.
+> 3. **Formação contínua:** imersão em cursos e capacitações para fortalecer minha visão de negócios.
+
+### 13.8 Por que mereço o prêmio (PES 2026 Q29)
+
+**Estrutura:** 3 parágrafos curtos — missão → tração → diferencial.
+
+**Exemplo:**
+
+> Mereço este reconhecimento porque decidi dar voz e visibilidade a quem transforma o Brasil. Hoje, iniciativas brilhantes morrem por não conseguirem provar o seu valor. A Manacá nasceu para ser essa ponte: unimos o trabalho de quem gera impacto real, no chão das comunidades, à tecnologia que destrava financiamentos e escala políticas públicas.
+>
+> Como mulher e liderança, construí um negócio sólido apenas com recurso próprio. Crescemos 140% ao ano, superamos R$ 646 mil em receita e já levamos nossas soluções a 14 municípios de 11 estados, tocando a realidade de mais de 41 mil estudantes em projetos educacionais. Fomos validados por grandes parceiros e reconhecidos globalmente no AI4GOOD da Brazil Conference em Harvard/MIT.
+>
+> Não criei apenas uma empresa de tecnologia; criei um motor de oportunidades para o setor de impacto. Mereço o prêmio porque provo, na prática, que a inovação de ponta só faz sentido quando garante que o impacto no país seja visto, valorizado e multiplicado.
+
+### 13.9 Modelo de negócio híbrido (Sebrae Startups Q3)
+
+**Estrutura:** 2 plataformas proprietárias + transição planejada % serviços → % produto.
+
+**Exemplo:**
+
+> A Manacá opera em modelos B2B e B2G, atuando na transição de um modelo de serviços para um modelo SaaS escalável.
+>
+> Atualmente, nossa receita é tracionada por consultorias estratégicas em ESG e impacto socioambiental, que validam a dor do mercado e alimentam o desenvolvimento de nossas tecnologias.
+>
+> Nossa estratégia de escala e recorrência baseia-se em duas plataformas proprietárias:
+> - **Flora**: Plataforma de gestão de impacto com planos de assinatura mensal escalonados (Impulso, Estruturação e Estratégico), variando conforme a complexidade e suporte exigidos pelo cliente.
+> - **Saíra**: Sistema inteligente de gestão de resíduos com modelo de receita recorrente baseado em assinatura mensal por ponto de monitoramento ativo.
+>
+> Esse modelo híbrido garante fluxo de caixa imediato (serviços) enquanto constrói a infraestrutura para receita recorrente de alta margem e baixo custo marginal (SaaS).
+
+### 13.10 TAM/SAM/SOM (WOW Batch #34)
+
+**Estrutura:** 3 camadas de mercado quantificadas + tendências macro.
+
+**Exemplo:**
+
+> O mercado de gestão de impacto socioambiental é massivo e crescente:
+> - **TAM:** 880 mil organizações do terceiro setor + empresas ESG no Brasil.
+> - **SAM:** 21 mil organizações com maturidade digital intermediária.
+> - **SOM:** 2 mil organizações acessíveis nos próximos 3 anos.
+>
+> O mercado global de investimento de impacto atingiu **US$ 1,571 trilhão** (crescimento de 21% a.a.). No Brasil, o investimento social privado (GIFE 2022) movimentou **R$ 4,8 bilhões**.
+>
+> Para o Saíra (smart cities / resíduos sólidos): **5.570 municípios brasileiros** investem bilhões em gestão de resíduos (PNRS). Recife sozinha possui **1.700+ pontos de descarte irregular**.
+>
+> A Manacá atua na interseção de três megatendências: transformação digital, exigência crescente de ESG por investidores e reguladores, e políticas públicas baseadas em evidências.
+
+---
+
+## 14. Estilo Manacá — padrões observados em redação bem-sucedida
+
+Padrões recorrentes em inscrições da CEO Rayssa que devem ser replicados quando a skill redigir em nome da Manacá.
+
+### 14.1 Quantificação obsessiva
+
+Cada parágrafo deve ter ao menos **um número concreto**: R$, %, quantidade ou ano. Texto sem números soa como marketing, não como tração.
+
+✅ "Crescemos 140% ao ano, superamos R$ 646 mil em receita e já levamos nossas soluções a 14 municípios de 11 estados."
+❌ "Crescemos muito nos últimos anos e estamos em vários estados do Brasil."
+
+### 14.2 Hierarquia de listas em "Resultados"
+
+A ordem canônica para campos de "resultados" / "tração" é:
+1. ALCANCE E ESCALA (municípios, estados, clientes)
+2. IMPACTO QUANTIFICADO (pessoas tocadas, projetos, métricas-fim)
+3. CRESCIMENTO FINANCEIRO (faturamento ano-a-ano + acumulado + crescimento %)
+4. CAPTAÇÃO VIA EDITAIS (total captado + breakdown por programa/agência/ano)
+5. RECONHECIMENTOS (selos, premiações, seleções)
+6. ACELERAÇÕES (programas dos quais participou)
+
+### 14.3 Redes sociais e links sempre incluídos
+
+Quando o campo aceita texto livre e há espaço, incluir LinkedIn, Instagram, site, vídeo (YouTube). Cada chancela ganha link verificável.
+
+### 14.4 Citações de chancela explícitas
+
+Sempre citar a instituição completa que chancela:
+
+✅ "AI4GOOD da Brazil Conference at Harvard/MIT (2025)"
+✅ "Selo 'Projeto com Propósito' do PMI-ES (2026)"
+✅ "Portal Impacta Brasil do MDIC, celeiro de soluções da COP30 (2025)"
+
+❌ "premiado em Harvard"
+❌ "selo do PMI"
+
+### 14.5 Verbos no presente para tração, futuro factual para promessa
+
+✅ "Operamos em modelos B2B e B2G."
+✅ "O investimento permitirá acelerar o desenvolvimento."
+
+❌ "Estamos podendo operar em B2B e B2G."
+❌ "O investimento poderia talvez acelerar..."
+
+### 14.6 Mensagem de fechamento em 3 parágrafos
+
+Para campos do tipo "por que devemos te selecionar", terminar sempre com **3 parágrafos curtos** na sequência **missão → tração → diferencial**, não 1 parágrafo longo.
+
+### 14.7 Cliente sempre com 1 linha de contexto
+
+Listar clientes sem explicar quem são é fraco. Cada cliente citado deve ganhar 1 frase curta de contexto.
+
+✅ "Bbutton: aceleradora de negócios, cliente recorrente."
+❌ "Bbutton."
+
+---
+
+## 15. Anti-padrões observados
+
+Padrões que apareceram em rascunhos gerados pela skill e foram corrigidos pela CEO antes da submissão. Evitar.
+
+### 15.1 ❌ "A gente vai..." / "Nós queremos..." em proposta formal
+
+Sempre construções impessoais ou terceira pessoa.
+
+✅ "A empresa executará..."
+❌ "A gente vai fazer..."
+
+### 15.2 ❌ Adjetivos hiperbólicos sem prova
+
+Banidos: "revolucionário", "único do mercado", "inédito", "perfeito", "disruptivo" — a menos que demonstrado com especificação técnica explícita.
+
+### 15.3 ❌ Mistura de tom
+
+Não combinar parágrafo formal seguido de parágrafo coloquial. Manter registro consistente do início ao fim.
+
+### 15.4 ❌ Lista de clientes sem contexto
+
+Não citar "Bbutton, Bracell, Suzano" como nomes soltos. Cada um precisa de 1 frase explicativa.
+
+### 15.5 ❌ Inconsistência interna entre documentos
+
+Caso real (abr/2026): a CEO escreveu "Sebrae/MDIC/ABDI" no doc PES e "Sebrae/MDIC/ITA" no doc WOW. Quando a skill detectar variantes do mesmo dado em documentos diferentes do mesmo ciclo, **pausar e perguntar ao usuário** qual é a forma vigente.
+
+### 15.6 ❌ Dados sem ano/data
+
+"Crescemos muito" sem janela temporal é marketing. Sempre citar ano de referência ou faixa.
+
+### 15.7 ❌ ODS genérico
+
+"Alinhado ao ODS 10" é fraco. Citar sub-meta específica: "ODS 10.3 — garantir igualdade de oportunidades..."
+
+### 15.8 ❌ TRL declarado sem evidência
+
+"TRL 7" sem tabela de evidências (número de clientes pagantes, métricas de uptime, datas de validação) é redutível pelo avaliador. Sempre acompanhar TRL com 2-3 evidências documentais.

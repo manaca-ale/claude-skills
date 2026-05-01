@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-04-13
-next_review: 2026-07-13
+last_verified: 2026-05-01
+next_review: 2026-08-01
 type: data
 canonical_for:
   - equipe_cvs_detalhados
@@ -12,7 +12,8 @@ canonical_for:
 derived_from:
   - empresa-manaca.md  # nomes_e_percentuais_socios sempre validar contra empresa-manaca
 stale_fields:
-  - lattes_urls ([PREENCHER] pendente para todos os membros)
+  - lattes_urls ([PERGUNTAR-AO-USUÁRIO] pendente para todos os membros)
+  - colaboradores_4_e_5 ([PERGUNTAR-AO-USUÁRIO] equipe atual tem 5 colaboradores fixos; arquivo lista apenas 3 nomes — confirmar identidade dos 2 restantes com Rayssa)
 ---
 
 # Equipe Manacá Tecnologias Sociais
@@ -21,8 +22,14 @@ stale_fields:
 
 ### Rayssa Pereira do Nascimento Mendes — CEO (65%)
 - **Gênero:** Feminino
-- **Email:** rayssa@manaca.net.br
-- **Telefone:** (11) 996303-8185
+- **Email principal:** rayssa@manaca.net.br
+- **Email alternativo:** rayssamendes2611@gmail.com
+- **Telefone (atual, com WhatsApp):** (21) 98799-1064
+- **Telefone (cadastral antigo):** (11) 99630-8185 — manter como referência caso edital exija histórico
+- **Instagram:** @rah.mendes
+- **CPF:** 355.300.408-88
+- **Data de nascimento:** 26/04/1991
+- **Etnia/cor autodeclarada:** Branca
 - **Localização:** Vitória - ES
 - **LinkedIn:** https://www.linkedin.com/in/ray-mendes/
 
@@ -181,13 +188,40 @@ stale_fields:
 
 ---
 
+## Composição da Equipe (resumo)
+
+> **ATENÇÃO — campo a confirmar:** segundo dados oficiais reportados pela CEO em formulários de inscrição (PES 2026 — Folha S.Paulo), a equipe Manacá é composta por **7 membros fixos** (2 sócios + 5 colaboradores). Este arquivo lista 3 colaboradores nomeados; os 2 restantes precisam ser identificados e adicionados aqui antes do próximo edital. Marcar com `[PERGUNTAR-AO-USUÁRIO: nome dos 2 colaboradores fixos faltantes]` em qualquer rascunho que dependa desse dado.
+
+| Categoria | Quantidade | Detalhes |
+|-----------|-----------|----------|
+| Sócios-fundadores | 2 | Rayssa Mendes (CEO 65%), Alexandre Coleto (CTO 35%) |
+| Colaboradores fixos nomeados neste arquivo | 3 | Rafaela Reis, Rafaella Gobbo, Gabrielle Alves |
+| Colaboradores fixos a confirmar | 2 | [PERGUNTAR-AO-USUÁRIO: nomes, cargos, formações] |
+| **Total fixo** | **7** | |
+| Consultores acionáveis | 2 | Ângelo Viana (Impacto/Métodos), Luan Orion (Cientista de Dados) |
+
+## Diversidade Estrutural
+
+Conforme reportado em inscrições oficiais da empresa (PES 2026):
+
+| Dimensão | Indicador |
+|----------|-----------|
+| Gênero | 71% mulheres (5 de 7 membros fixos) |
+| Liderança feminina | CEO e principal sócia é mulher (Rayssa, 65%) |
+| Etnia | 1 colaborador autodeclarado negro |
+| LGBTQIA+ | 2 membros oficialmente autodeclarados |
+| Origem regional | Pluralidade Sudeste / Nordeste |
+| PCDs | [PERGUNTAR-AO-USUÁRIO: confirmar antes de declarar em edital] |
+
+**Notas para preenchimento:** quando o edital exigir composição étnico-racial específica (ex: PES 2026 Q38), pedir à Rayssa para validar o número antes de submeter. **Nunca inventar dados de autodeclaração.**
+
 ## Notas para Editais
 
 - A equipe é multidisciplinar: ciências sociais, engenharia, design de produto, dados, educação, comunicação, física
-- Forte componente de pesquisa acadêmica (1 doutor, 2 mestres, 1 doutoranda USP)
-- Diversidade de gênero: maioria feminina na equipe (4 de 5 colaboradores fixos)
+- Forte componente de pesquisa acadêmica (1 doutor consultor, 2 mestres, 1 doutoranda USP)
+- Diversidade de gênero: 71% feminina (segundo declaração oficial PES 2026)
 - Experiência comprovada em projetos com setor público (Gov. ES, Sec. Educação AP, Prefeitura Recife), privado (Samsung, Petrobras, ArcelorMittal, Águia Branca) e terceiro setor (Banco Mundial, Unicef, Lemann, Itaú Social)
 - Reconhecimento internacional: AI4GOOD Harvard/MIT (ResiliêncIA + BT Tracker), Sciences Po, Columbia University, ICTP
-- Modelo flexível: equipe-base de 5 + consultores especializados (PhD em IA/dados, consultor de impacto) acionados por projeto
+- Modelo flexível: 7 fixos + 2 consultores especializados (PhD em IA/dados, consultor de impacto) acionados por projeto
 - Certificações: PMP, Insper (Impacto Social), Lean/Ágil (Northern Illinois/Tennessee)
-- Lattes de cada membro: [PREENCHER URLs do Currículo Lattes]
+- Lattes de cada membro: [PERGUNTAR-AO-USUÁRIO: URLs do Currículo Lattes]

@@ -139,6 +139,54 @@ Todas as fases são obrigatórias.
 
 ---
 
+## ⛔ Regra Absoluta: NUNCA Inventar Dados
+
+**A skill NUNCA pode preencher um campo de proposta com dado inventado, estimado ou inferido sem confirmação explícita do usuário.** Esta regra supera todas as outras — qualquer ambiguidade entre velocidade e precisão deve ser resolvida em favor da precisão. Editais são avaliados por humanos que cruzam dados; um único número errado quebra credibilidade.
+
+### O que está protegido pela regra
+
+- **Números:** faturamento, pessoas impactadas, crescimento, número de clientes, projetos entregues, municípios atendidos, estados, % de qualquer indicador.
+- **Datas:** quando projeto foi fundado, ano de cada edital vencido, validade de certidões, datas de eventos.
+- **Nomes próprios:** clientes, parceiros institucionais, agências, programas de aceleração, instituições parceiras.
+- **Valores monetários:** orçamentos, receitas, captações, ticket médio, contrapartidas.
+- **Métricas técnicas:** TRL, modelos de IA específicos (ex: YOLO v8 vs v11), stack tecnológico, usuários ativos.
+- **Reconhecimentos:** selos, premiações, seleções, anos.
+- **Composição de equipe:** quantidade total, identidade dos membros, dedicação em horas/semana.
+- **Diversidade declarada:** % mulheres, autodeclarações étnicas/LGBTQIA+/PCD.
+
+### Ação obrigatória quando faltar dado
+
+1. **Marcar o campo no rascunho** com a sintaxe `[PERGUNTAR-AO-USUÁRIO: <descrição precisa da pergunta>]`. Exemplo: `TRL atual: [PERGUNTAR-AO-USUÁRIO: confirmar TRL atual da Flora com evidência documental]`.
+2. **Pausar a redação** antes de finalizar/exportar/enviar e usar AskUserQuestion (ou pergunta direta) para coletar o dado.
+3. **NUNCA** preencher com:
+   - Placeholder genérico ("a confirmar", "X mil")
+   - "Estimativa" sem dado-fonte
+   - Interpolação criativa de outros dados conhecidos
+   - Cópia de valor de outro projeto ou edital
+4. **Quando um dado encontrado em `references/` parecer desatualizado** (ex: receita "até mar" quando hoje é mai), **pausar e perguntar ao usuário** se o dado foi atualizado, antes de usar.
+5. **Quando duas referências divergirem** (ex: 8 estados em um arquivo e 11 em outro), executar `python scripts/validate_facts.py --refs` e perguntar ao usuário qual é o valor correto antes de prosseguir.
+6. **Quando a CEO escrever o mesmo dado de formas diferentes em documentos distintos** (caso real abr/2026: "Sebrae/MDIC/ABDI" vs "Sebrae/MDIC/ITA"), confirmar com ela qual é a forma vigente para o edital específico. Não escolher por conta própria.
+
+### Sub-fase 5a.0 — Audit de Lacunas (obrigatória antes de redigir)
+
+Antes de iniciar qualquer redação na Fase 5a (Data Assembly):
+
+1. Listar TODOS os marcadores `[PERGUNTAR-AO-USUÁRIO: ...]` e `[PREENCHER]` relevantes ao edital atual nos arquivos de referência consultados.
+2. Apresentar a lista consolidada ao usuário como **batch único de perguntas** via AskUserQuestion ou listagem direta.
+3. Aguardar respostas e atualizar `references/` ou o draft local com os valores confirmados.
+4. **Não avançar para 5a.1+** enquanto houver lacuna não resolvida que afete uma seção crítica do edital.
+
+### Caso real (abr/2026)
+
+A CEO Rayssa identificou diversos dados desatualizados ou inventados em rascunhos gerados pela skill durante 3 inscrições reais (PES 2026, WOW Batch #34, Prêmio Sebrae Startups 2026). Exemplos:
+- Faturamento "até mar/2026" usado em formulário submetido em 30/04 — desatualizado em 2 meses.
+- Telefone (11) usado em formulário, quando o telefone vigente da CEO é (21).
+- Pricing Flora "R$ 49,90 / R$ 299,00" usado em formulário, quando o vigente é a estrutura 3-planos (Impulso/Estruturação/Estratégico).
+
+A maioria desses erros teria sido evitada com a Sub-fase 5a.0. **Esta é regra fiduciária: violar custa credibilidade da CEO frente a banca de avaliadores.**
+
+---
+
 ## Princípios de Escrita PT-BR (regras INVIOLÁVEIS)
 
 **Tudo que esta skill produz é em português brasileiro completo, com acentuação correta desde o primeiro rascunho.** Acentos não são "polish final" — são parte da escrita. Pular acentos é pular qualidade.

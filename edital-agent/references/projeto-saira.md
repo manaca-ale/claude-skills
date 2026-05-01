@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-04-13
-next_review: 2026-07-13
+last_verified: 2026-05-01
+next_review: 2026-08-01
 type: data
 canonical_for:
   - saira_descricao
@@ -11,7 +11,7 @@ canonical_for:
   - saira_ativos_reusaveis
 derived_from: []
 stale_fields:
-  - registro_software ([PREENCHER] pendente)
+  - registro_software ([PERGUNTAR-AO-USUÁRIO] status do depósito INPI)
 ---
 
 # Projeto SAÍRA — Sistema de Alerta Inteligente para Resíduos e Autuações
@@ -58,14 +58,22 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 ## Arquitetura da Solução
 
 ### 3 Camadas Funcionais
-1. **Monitoramento e Detecção** — Câmeras com IA, drones, sensores IoT, app de denúncia cidadã
-2. **Processamento e Análise** — Motor de IA (YOLO), georreferenciamento, análise de riscos, motor de match socioambiental
-3. **Ação e Destinação** — Dashboard de gestão, fiscalização automatizada, logística de limpeza, relatórios de impacto
+1. **Monitoramento e Detecção** — Câmeras com IA, drones, sensores IoT, app cidadão para denúncias geolocalizadas
+2. **Processamento e Análise** — Motor de IA (YOLO v8/v11), georreferenciamento, análise de riscos, motor de match socioambiental
+3. **Ação e Destinação** — Dashboard de gestão, fiscalização automatizada, logística de limpeza, relatórios de impacto, integração com economia circular
+
+### Modelos de IA Aplicados
+
+| Modalidade | Modelo / Framework | Aplicação |
+|------------|--------------------|-----------|
+| Visão computacional | **YOLO v8 / YOLO v11** | Detecção de tipo e volume de resíduos, bounding-box em câmeras inteligentes |
+| Bots de alerta | Integração via API | Disparo automatizado a partir de detecção positiva |
+| Otimização de rotas | Algoritmos de roteamento | Otimização da coleta urbana com base em hotspots detectados |
 
 ### Módulos do MVP
-1. **IA para Visão Computacional** — Detecção de resíduos em imagens, classificação de tipo/volumetria, registro de reincidência
-2. **App Web Mobile** — Foto obrigatória + localização automática + tipo de resíduo + envio (React Native)
-3. **Dashboard de Gestão Pública** — Mapa interativo, histórico de ocorrências, alertas, exportação CSV
+1. **IA para Visão Computacional** — Detecção de resíduos em imagens (YOLO v8/v11), classificação de tipo/volumetria, registro de reincidência
+2. **App Cidadão Mobile** — Foto obrigatória + localização geolocalizada automática + tipo de resíduo + envio (React Native), conectando com ações de economia circular
+3. **Dashboard de Gestão Pública** — Mapa interativo, histórico de ocorrências, alertas via bots, exportação CSV
 4. **Integração com Sistemas da Prefeitura** — API/CSV para CTTU, Emlurb, Defesa Civil
 
 ## Diferenciais
@@ -73,6 +81,23 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 - **Escalável:** funciona em bairros, cidades inteiras ou regiões metropolitanas
 - **Integrável:** conecta com sistemas existentes da Prefeitura
 - **Inteligência Social:** transforma resíduos de problema urbano em oportunidade social e econômica
+
+## Modelo de Receita
+
+| Componente | Modelo |
+|------------|--------|
+| Receita principal | **Assinatura mensal por ponto de monitoramento ativo** (câmera/sensor instalado) |
+| Cliente-alvo | Prefeituras, consórcios municipais, grandes geradores de resíduos |
+| Mecanismo de contratação | Contrato Público de Solução Inovadora (CPSI) — Lei Complementar 182/2021 (Marco Legal das Startups) |
+| Replicabilidade | Modelo do CPSI Recife replicável para outros municípios |
+
+## Mercado Endereçável
+
+| Camada | Tamanho | Fonte |
+|--------|---------|-------|
+| Universo de prefeituras | **5.570 municípios brasileiros** | PNRS — Política Nacional de Resíduos Sólidos |
+| Mercado endereçável imediato | Recife — **1.700+ pontos de descarte irregular** mapeados | Diagnóstico CPSI Recife 2025 |
+| Pipeline expansão | Capitais e regiões metropolitanas com convênio Lei 182/2021 ativo | — |
 
 ## Editais Vencidos
 
@@ -84,9 +109,11 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 - **Status:** Vencedor
 
 ### Empreendedoras Tech
-- **Programa:** Empreendedoras Tech (provavelmente aceleração)
+- **Programa:** Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA (consórcio inter-institucional)
+- **Ano:** 2025
+- **Subvenção:** R$ 26.000
 - **Escopo:** Mesmo SAÍRA, foco no potencial de expansão
-- **Status:** Vencedor
+- **Status:** Vencedor — concluído
 
 ## Desafios Tecnológicos Principais
 1. Integração de múltiplas fontes de dados urbanos em plataforma única
@@ -98,9 +125,19 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 
 | Campo | Valor |
 |-------|-------|
-| Código-fonte | Proprietário da Manacá |
-| Modelos de IA | Treinados pela equipe Manacá |
-| Registro de software | [PREENCHER] |
+| Código-fonte | Proprietário da Manacá (proteção Lei 9.610/98) |
+| Modelos de IA | Treinados pela equipe Manacá (datasets próprios + dados públicos) |
+| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] — em processo |
+| Marca registrada "SAÍRA" | Em processo de depósito no INPI |
+
+## Projetos Irmãos / PD&I
+
+Tecnologias derivadas que compartilham componentes (visão computacional, IA explicável, integração com APIs públicas) com o SAÍRA:
+
+| Projeto | Foco | Status | Reconhecimentos |
+|---------|------|--------|-----------------|
+| **ResiliêncIA** | IA + ML aplicado a planos municipais de ação climática (integração INPE + AdaptaBrasil) | Em ideação | **Vencedor AI4GOOD Brazil Conference at Harvard/MIT (2025)** |
+| **BT Tracker** | Monitoramento de queimadas e qualidade do ar na Amazônia | Em ideação | Premiado AI4GOOD (líder: Gabrielle Alves) |
 
 ## Impacto Social e Ambiental
 - Redução de pontos de descarte irregular

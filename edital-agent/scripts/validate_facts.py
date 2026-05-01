@@ -165,6 +165,30 @@ def check_facts_in_text(text: str, source: str) -> list[str]:
     return errors
 
 
+def check_pending_markers(text: str, source: str) -> list[str]:
+    """Detecta marcadores de lacunas que precisam ser respondidas pelo usuario.
+
+    Retorna lista de avisos (nao bloqueiam, mas listam o que falta resolver).
+    """
+    warnings = []
+    # [PERGUNTAR-AO-USUARIO: ...] — convencao nova
+    for m in re.finditer(r"\[PERGUNTAR-AO-USU[ÁA]RIO:\s*([^\]]+)\]", text):
+        warnings.append(
+            f"PENDENTE em {source}: [PERGUNTAR-AO-USUARIO: {m.group(1).strip()}]"
+        )
+    # [PREENCHER] — convencao legacy, deveria estar migrando para PERGUNTAR-AO-USUARIO
+    for m in re.finditer(r"\[PREENCHER[^\]]*\]", text):
+        warnings.append(
+            f"LEGACY em {source}: marcador [PREENCHER] (migrar para [PERGUNTAR-AO-USUARIO: ...])"
+        )
+    # [CONFIRMAR ...] — convencao antiga
+    for m in re.finditer(r"\[CONFIRMAR[^\]]*\]", text):
+        warnings.append(
+            f"LEGACY em {source}: marcador [CONFIRMAR ...] (migrar para [PERGUNTAR-AO-USUARIO: ...])"
+        )
+    return warnings
+
+
 def mode_refs(refs: dict) -> int:
     """Modo --refs: valida consistencia entre referencias."""
     print("=" * 60)
@@ -178,6 +202,7 @@ def mode_refs(refs: dict) -> int:
     print()
 
     errors: list[str] = []
+    warnings: list[str] = []
 
     # 1. Colisoes de canonical_for
     errors.extend(check_canonical_collision(refs))
@@ -186,14 +211,24 @@ def mode_refs(refs: dict) -> int:
     for name, (_, body) in refs.items():
         errors.extend(check_facts_in_text(body, name))
 
+    # 3. Marcadores de lacunas pendentes (nao bloqueiam, mas listam)
+    for name, (_, body) in refs.items():
+        warnings.extend(check_pending_markers(body, name))
+
     if errors:
         print("ERROS DETECTADOS:")
         for e in errors:
             print(f"  X {e}")
-        return 1
     else:
-        print("OK: todas as referencias consistentes (zero divergencias).")
-        return 0
+        print("OK: zero divergencias entre referencias.")
+
+    if warnings:
+        print()
+        print("LACUNAS PENDENTES (perguntar ao usuario antes de redigir):")
+        for w in warnings:
+            print(f"  ? {w}")
+
+    return 1 if errors else 0
 
 
 def mode_draft(refs: dict, draft_path: Path) -> int:
@@ -207,15 +242,25 @@ def mode_draft(refs: dict, draft_path: Path) -> int:
         return 2
     text = draft_path.read_text(encoding="utf-8")
     errors = check_facts_in_text(text, str(draft_path))
+    warnings = check_pending_markers(text, str(draft_path))
 
     if errors:
         print("ERROS DETECTADOS:")
         for e in errors:
             print(f"  X {e}")
-        return 1
     else:
         print("OK: draft consistente com fonte canonica.")
-        return 0
+
+    if warnings:
+        print()
+        print("LACUNAS PENDENTES (resolver antes de submeter):")
+        for w in warnings:
+            print(f"  ? {w}")
+        print()
+        print("=> Antes de finalizar este draft, perguntar ao usuario sobre")
+        print("   cada lacuna acima e atualizar o conteudo.")
+
+    return 1 if errors else 0
 
 
 def main() -> int:

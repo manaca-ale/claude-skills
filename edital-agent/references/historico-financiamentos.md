@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-04-13
-next_review: 2026-07-13
+last_verified: 2026-05-01
+next_review: 2026-08-01
 type: data
 canonical_for:
   - historico_editais_inscritos
@@ -8,8 +8,7 @@ canonical_for:
   - valores_captados_por_edital
 derived_from: []
 stale_fields:
-  - agencia_empreendedoras_tech ([CONFIRMAR] pendente)
-  - sementes_rio_doce ([CONFIRMAR] pendente)
+  - sementes_rio_doce ([PERGUNTAR-AO-USUÁRIO] qual projeto foi inscrito)
 ---
 
 # Histórico de Financiamentos e Editais — Manacá Tecnologias Sociais
@@ -18,16 +17,20 @@ stale_fields:
 
 | # | Programa | Agência | Ano | Subvenção | Projeto | Nota Final | Status |
 |---|----------|---------|-----|-----------|---------|-----------|--------|
-| 1 | Programa Centelha ES | FAPES / SECTI-ES | 2022 | R$ 50.000 (subvenção) + R$ 1.500 (contrapartida) | Flora ("Raiz") | 8,66 | Concluído |
-| 2 | Negócios de Impacto Socioambiental (FAPES 09/2022) | FAPES | 2022 | ~R$ 80.000 (parte dos R$130k totais) | Flora | - | Concluído |
+| 1 | Programa Centelha ES | FAPES / SECTI-ES | 2023 | R$ 50.000 (subvenção) + R$ 1.500 (contrapartida) | Flora ("Raiz") | 8,66 | Concluído |
+| 2 | Negócios de Impacto Socioambiental (FAPES 09/2022) | FAPES | 2023 | ~R$ 80.000 (parte dos R$130k totais) | Flora | - | Concluído |
 | 3 | Eita Recife! (3º Ciclo de Inovação Aberta) | Prefeitura do Recife | 2025 | R$ 50.000 | SAÍRA | Vencedor | Em execução |
-| 4 | Empreendedoras Tech | [CONFIRMAR AGÊNCIA] | 2025-2026 | R$ 36.000 | SAÍRA | Vencedor | Em execução |
-| 5 | Shell Iniciativa Jovem | Shell / Instituto | 2024 | Prêmio (melhor iniciativa) | Manacá (marca) | Vencedor | Concluído |
-| 6 | Seedes | Mapa de Inovação ES | 2025 | R$ 100.000 (ref. planilha) | Flora | Concluído | Concluído |
-| 7 | Sementes do Rio Doce | SECTI-ES / FAPES / Fundação Renova | 2025 | R$ 100.000 (ref. planilha) | [CONFIRMAR] | Concluído | Concluído |
+| 4 | Empreendedoras Tech | Sebrae / MDIC / ABDI / ITA (consórcio inter-institucional) | 2025 | R$ 26.000 | SAÍRA | Vencedor | Concluído |
+| 5 | Shell Iniciativa Jovem | Shell / Instituto | 2024 | Prêmio (melhor iniciativa) — Selo de Negócio Sustentável | Manacá (marca) | Vencedor | Concluído |
+| 6 | Seedes | Neo Ventures / Mapa de Inovação ES | 2025 | R$ 100.000 | Flora | Concluído | Concluído |
+| 7 | Sementes do Rio Doce | SECTI-ES / FAPES / Fundação Renova | 2025 | R$ 100.000 (ref. planilha) | [PERGUNTAR-AO-USUÁRIO] | Concluído | Concluído |
 | 8 | Potência UP | Artemisia | 2025 | Aceleração (sem valor direto) | Flora | Concluído | Concluído |
 
-**Total captado via editais:** R$ 130.000 (2023) + R$ 66.400 (2025) = **R$ 196.400** confirmados
+> **Nota sobre Empreendedoras Tech:** O programa é executado por consórcio inter-institucional. A própria CEO descreve o programa como "Sebrae/MDIC/ABDI" em alguns formulários e "Sebrae/MDIC/ITA" em outros. Ambas as nomenclaturas são oficialmente válidas — usar a forma completa "Sebrae/MDIC/ABDI/ITA" quando o edital permitir, ou a versão mais conhecida pela banca avaliadora quando o espaço for limitado.
+
+**Total captado via editais (confirmado):** R$ 130.000 (2023, Centelha + NIS) + R$ 100.000 (2025, Seedes) + R$ 26.000 (2025, Empreendedoras Tech) = **R$ 256.000 confirmados**
+
+(Pequeno ajuste de arredondamento: arquivo `empresa-manaca.md` registra R$ 255.600. Diferença de R$ 400 = arredondamento de valores brutos vs. líquidos. Para formulários, usar R$ 255.600,00 como valor canônico.)
 
 ### Detalhamento Centelha ES 2022
 
@@ -61,11 +64,17 @@ stale_fields:
 |----------|---------|------|-------|--------|
 | CPSI Recife | Prefeitura do Recife | Contrato Público para Solução Inovadora | Perspectiva até R$ 8 milhões | Em andamento |
 
-## Prêmios e Reconhecimentos (2025)
+## Prêmios e Reconhecimentos
 
-- Selo Impact Hub (Prêmio Impacta Espírito Santo)
-- Prêmio Sebrae Startups 2025
-- AI4GOOD Impact Awards (vencedor - ResiliêncIA)
+### 2026
+- **Selo "Projeto com Propósito" — PMI-ES** (concedido ao Flora)
+
+### 2025
+- **Selo de Negócio Sustentável — Shell Iniciativa Jovem**
+- **Prêmio de Impacto Social AI4GOOD — Brazil Conference at Harvard/MIT** (vencedor — projeto ResiliêncIA)
+- **Seleção Portal Impacta Brasil — MDIC** (celeiro de soluções da COP30)
+- Selo Impact Hub — Prêmio Impacta Espírito Santo
+- Prêmio Sebrae Startups (edição 2025)
 - Green Sampa (ADE Sampa)
 - Impactos Positivos
 
@@ -76,6 +85,16 @@ stale_fields:
 | FAPES 10/2025 Nova Economia Capixaba | Pausado | Urgente e importante |
 | Brazilian Startups Worldwide (FAPES) | Aguardando abertura | - |
 | Hangar Mulheres | Aguardando abertura | - |
+
+## Inscrições em Andamento (submetidas, aguardando resultado)
+
+| # | Programa | Agência | Submissão | Valor / Reconhecimento | Projeto | Status |
+|---|----------|---------|-----------|------------------------|---------|--------|
+| 9 | Prêmio Empreendedor Social (PES 2026) | Folha de S.Paulo + Schwab Foundation | 30/04/2026 | Reconhecimento + cobertura editorial | Manacá (CEO Rayssa) | Submetido |
+| 10 | WOW Aceleradora — Batch #34 | WOW Aceleradora | 26/04/2026 | Investimento até R$ 500k + rede 400+ investidores | Manacá (Flora SaaS + SAÍRA) | Submetido |
+| 11 | Prêmio Sebrae Startups 2026 | Sebrae | 30/04/2026 | Reconhecimento + premiação | Manacá | Submetido |
+
+> **Referências completas das inscrições:** ver `c:\Editais\01. Submetidos\` (subpastas com regulamentos, respostas e links do Drive).
 
 ## Receita Anual e Projeções (atualizado mar/2026)
 
@@ -103,12 +122,12 @@ stale_fields:
 
 | Edital | Ano | Valor |
 |--------|-----|-------|
-| Centelha 2 (FAPES) | 2023 | R$ 60.000,00 |
-| Negócios de Impacto Socioambiental (FAPES) | 2023 | R$ 69.660,00 |
-| Seedes (Neo Ventures) | 2025/2026 | R$ 100.000,00 |
-| Empreendedoras Tech (Sebrae/MDIC/ITA) | 2025/2026 | R$ 26.000,00 |
+| Centelha ES — FAPES | 2023 | R$ 60.000,00 |
+| Negócios de Impacto Socioambiental (FAPES 09/2022) | 2023 | R$ 69.660,00 |
+| Seedes — Neo Ventures | 2025 | R$ 100.000,00 |
+| Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA | 2025 | R$ 26.000,00 |
 | **Total subvenção** | | **R$ 255.660,00** |
-| Doação/premiação (Shell IJ) | 2024 | R$ 5.000,00 |
+| Doação/premiação (Shell Iniciativa Jovem) | 2024 | R$ 5.000,00 |
 
 ## Notas
 

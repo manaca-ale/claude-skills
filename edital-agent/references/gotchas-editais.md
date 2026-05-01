@@ -315,3 +315,45 @@ Caso real Lab Procel: vídeo do Connectec Smart Cities foi reaproveitado como pi
 **Regra:** cada `projeto-*.md` (saira, flora, futuros) tem uma seção "Ativos Reutilizáveis" com tabela de vídeos, decks, imagens hero, dossiês PDF anteriores, com caminho/link. Quando produzir asset novo significativo (cover, vídeo, deck, imagem hero), atualizar o índice. Antes de criar novo asset para edital, conferir o índice primeiro.
 
 Ao reaproveitar um asset, **copiar para o diretório do novo edital** (não link cross-projeto, evita quebra quando o original move).
+
+---
+
+## 10. Lições de 3 Inscrições da Rayssa (2026-04 — PES, WOW, Sebrae Startups)
+
+A CEO Rayssa rodou a skill em 3 editais simultaneamente em abril/2026 e detectou múltiplos problemas factuais. Esta seção documenta os padrões para evitar repetição.
+
+### 10.1 NUNCA INVENTAR DADOS — agora é regra fiduciária
+
+A skill estava preenchendo campos com dados desatualizados ou inferidos quando faltava informação. Caso real:
+
+- **Faturamento:** rascunho usou "R$ 567.491 até mar/2026" enquanto o valor vigente era "R$ 646.915 até mai/2026" (formulário PES submetido 30/04).
+- **Telefone:** rascunho usou (11) 99630-8185 enquanto o telefone vigente da CEO é (21) 98799-1064.
+- **Pricing Flora:** rascunho usou "R$ 49,90 / R$ 299,00" (2 planos legacy) enquanto o vigente é estrutura 3-planos (Impulso/Estruturação/Estratégico).
+- **Estados de atuação:** rascunho usou "8 estados" enquanto a contagem correta é 11 (a lista de 14 municípios sempre cobriu 11 estados).
+
+**Regra nova (formalizada em SKILL.md):** marcar campos faltantes com `[PERGUNTAR-AO-USUÁRIO: <pergunta>]` e pausar antes de finalizar. Sub-fase 5a.0 (Audit de Lacunas) é obrigatória antes de redigir.
+
+### 10.2 Inconsistência interna entre múltiplos documentos do mesmo ciclo
+
+Quando a CEO escreve **3 inscrições em paralelo**, é possível (e aconteceu) que o mesmo dado apareça com variantes diferentes em cada doc. Caso real:
+
+- "Empreendedoras Tech (Sebrae/MDIC/**ABDI**)" no doc PES.
+- "Empreendedoras Tech (Sebrae/MDIC/**ITA**)" no doc WOW.
+
+Após validação com a CEO: **ambas formas são oficialmente válidas** — o programa é executado por consórcio inter-institucional Sebrae/MDIC/ABDI/ITA. **Resolução:** documentar a forma completa em `historico-financiamentos.md` e usar a versão mais relevante para o edital específico.
+
+**Regra:** ao detectar variantes do mesmo dado em rascunhos diferentes do mesmo ciclo, **pausar e confirmar com a CEO** antes de propagar. Não escolher por conta própria.
+
+### 10.3 Pasta `01. Submetidos/` para indexar inscrições não vencedoras
+
+Antes desta lição, só havia `00. Vencedores/` para inscrições já decididas. Inscrições aguardando resultado ficavam soltas no Drive sem indexação local. **Solução criada:** pasta `c:\Editais\01. Submetidos\` com uma subpasta por edital submetido (com README, regulamento, respostas e link Drive). Quando sair o resultado:
+- Vencedor → mover para `00. Vencedores/`.
+- Perdedor → manter em `01. Submetidos/` + criar `08-post-mortem.md` analisando o que poderia ter sido feito diferente.
+
+### 10.4 Regulamento sempre consultado em paralelo às respostas
+
+Caso real Sebrae: a CEO usou a skill para gerar o doc de respostas mas o regulamento PDF do edital ficou só no Drive. Resultado: Q9 ("link do Pitch Deck PDF") ficou em branco — campo notado tarde. **Regra:** baixar o regulamento original do edital para a subpasta `01. Submetidos/<slug>/` e referenciá-lo no README local. Antes de finalizar, **cross-check campos do regulamento × campos preenchidos**.
+
+### 10.5 Estilo de redação canônico — extrair exemplos das vencedoras
+
+A CEO escreveu trechos excelentes nos 3 editais (ex: PES Q23, Q25, Q27, Q29; WOW TAM/SAM/SOM; Sebrae Q5, Q6). Esses trechos viraram **exemplos canônicos** na seção 13 de `guia-redacao-editais.md`. **Regra:** após cada inscrição, identificar 2-3 trechos que funcionaram bem e adicionar como exemplo canônico para reuso futuro.

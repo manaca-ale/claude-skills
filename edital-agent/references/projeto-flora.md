@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-04-13
-next_review: 2026-07-13
+last_verified: 2026-05-01
+next_review: 2026-08-01
 type: data
 canonical_for:
   - flora_descricao
@@ -10,11 +10,12 @@ canonical_for:
   - flora_ativos_reusaveis
 derived_from: []
 stale_fields:
-  - trl ([PREENCHER] pendente)
-  - stack_tecnologica ([PREENCHER] pendente)
-  - usuarios_ativos ([PREENCHER] pendente)
-  - registro_software_inpi ([PREENCHER] pendente)
-  - patente ([PREENCHER] pendente)
+  - trl ([PERGUNTAR-AO-USUÁRIO] estimativa TRL 6-7 com base em projetos validados, mas precisa confirmação técnica)
+  - stack_tecnologica ([PERGUNTAR-AO-USUÁRIO] linguagens, frameworks, infra cloud, modelos IA usados)
+  - usuarios_ativos ([PERGUNTAR-AO-USUÁRIO] número exato de usuários ativos hoje)
+  - registro_software_inpi ([PERGUNTAR-AO-USUÁRIO] status atual do depósito)
+  - patente ([PERGUNTAR-AO-USUÁRIO] confirmar se há patente prevista ou apenas registro de software)
+  - pricing_planos_valores ([PERGUNTAR-AO-USUÁRIO] valor R$/mês de cada plano: Impulso, Estruturação, Estratégico)
 ---
 
 # Projeto Flora — Plataforma de Monitoramento e Gestão de Impacto
@@ -27,10 +28,12 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 
 | Campo | Valor |
 |-------|-------|
-| TRL (Technology Readiness Level) | [PREENCHER - estimativa: TRL 6-7 com base nos projetos validados] |
-| Stack Tecnológica | [PREENCHER] |
-| Usuários ativos | [PREENCHER] |
+| TRL (Technology Readiness Level) | [PERGUNTAR-AO-USUÁRIO: TRL atual com evidências] — estimativa baseline TRL 6-7 (MVP em validação com primeiros clientes SaaS) |
+| Stack Tecnológica | [PERGUNTAR-AO-USUÁRIO: linguagens, frameworks, infra cloud, modelos IA] |
+| Usuários ativos | [PERGUNTAR-AO-USUÁRIO: número exato] — Bbutton confirmado como cliente recorrente com 2 projetos |
 | Servidor | EC2 AWS (alias SSH: Flora) |
+| Reconhecimento | **Selo "Projeto com Propósito" — PMI-ES (2026)** |
+| Status comercial | Primeiros clientes SaaS em validação (Bbutton recorrente) — transição bootstrapped consultoria → produto |
 
 ## Funcionalidades
 
@@ -47,6 +50,17 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 1. **Estratégia** — Construção de estratégias de impacto (métricas claras, teoria de mudança)
 2. **Gestão de Dados** — Co-criação de instrumentos de coleta, validação de fluxos
 3. **Impacto** — Tradução de dados em insights acionáveis (dashboards, relatórios técnicos)
+
+### Camada de Inteligência Artificial
+
+A Flora aplica IA em três modalidades complementares:
+
+| Modalidade | Aplicação | Estado |
+|------------|-----------|--------|
+| IA Generativa (LLMs) | Geração automática de relatórios de impacto em linguagem simples; síntese de dados qualitativos | Em produção |
+| IA Preditiva | Cruzamento de indicadores para projeções de impacto futuro | Em validação |
+| IA Explicável (XAI) | Auditabilidade dos resultados gerados pela IA — diferencial vs. ChatGPT genérico | Em validação |
+| Integração APIs públicas | IBGE, AdaptaBrasil, GIFE — enriquecimento automático de datasets | Em produção |
 
 ## Diferencial Competitivo
 
@@ -100,23 +114,43 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 
 ## Pricing
 
-| Plano | Valor |
-|-------|-------|
-| Consultoria (serviços) | A partir de R$ 3.000,00 |
-| Assinatura SaaS (básico) | R$ 49,90/mês |
-| Assinatura SaaS (completo) | R$ 299,00/mês |
-| Modelo | Freemium + consultoria + assinatura |
+Modelo atual (atualizado conforme inscrição Sebrae Startups 2026): **três planos de assinatura mensal escalonados** + consultoria estratégica.
+
+| Plano | Foco | Público-alvo | Valor R$/mês |
+|-------|------|--------------|--------------|
+| **Impulso** | Onboarding e gestão básica de impacto | ONGs e Institutos com 1-2 projetos | [PERGUNTAR-AO-USUÁRIO] |
+| **Estruturação** | Múltiplos projetos + dashboards + suporte | Fundações e aceleradoras com portfólio | [PERGUNTAR-AO-USUÁRIO] |
+| **Estratégico** | Customização total + IA preditiva + suporte dedicado | Grandes institutos, empresas com ISP, governos | [PERGUNTAR-AO-USUÁRIO] |
+| Consultoria estratégica | Projetos discretos (Teoria da Mudança, SROI, dashboards) | A partir de R$ 3.000,00 (ticket médio R$ 16.000,00) |
+| Modelo de aquisição | Freemium para diagnóstico → conversão para plano pago |
+
+> **Nota crítica:** os valores R$/mês de cada plano variam conforme negociação com o cliente. Antes de declarar valor em formulário de edital, **perguntar à Rayssa** o valor vigente do plano em questão. Histórico legado (não usar): plano Básico R$ 49,90 / Completo R$ 299,00 — descontinuado.
 
 ## Concorrentes
 
+### Concorrentes Diretos
+
 | Concorrente | Preço | Diferencial | Limitação |
 |-------------|-------|-------------|-----------|
-| Move Social | R$ 300/mês | Plataforma de gestão de projetos sociais | Funcionalidades simples, sem IA |
-| Sopact | $99/mês | Consultoria + plataforma cloud | Fora do Brasil, foco compliance |
-| Bússola Social | Sob consulta | Inteligência e personalização | Modelo consultoria, sem plataforma |
-| ChatGPT | ~R$ 120/mês | IA generativa genérica | Sem metodologia validada para impacto |
+| Move Social | R$ 300/mês | Plataforma de gestão de projetos sociais | Funcionalidades simples, sem IA, sem governança de dados |
+| Sopact | US$ 99/mês | Consultoria + plataforma cloud | Fora do Brasil, foco em compliance ESG (não impacto real) |
+| Bússola Social | Sob consulta | Inteligência e personalização | Modelo consultoria, sem plataforma SaaS escalável |
 
-**Diferencial Manacá/Flora:** IA generativa + rigor metodológico + foco Brasil + custo acessível + curadoria científica
+### Concorrentes Indiretos
+
+| Concorrente | Posicionamento | Limitação vs. Manacá |
+|-------------|----------------|----------------------|
+| **IDIS** | Consultoria tradicional de impacto | Caros, não escaláveis, sem tecnologia proprietária |
+| **McKinsey Social** | Big consultancy | Caros, sem plataforma, projetos longos |
+| ChatGPT / IA genérica | Geração de texto livre (~R$ 120/mês) | Sem metodologia validada para mensuração de impacto, sem segurança de dados, sem auditabilidade |
+
+### Diferenciais Manacá/Flora
+
+1. **IA Explicável (XAI):** A Flora não apenas armazena dados — interpreta e gera relatórios confiáveis e auditáveis automaticamente.
+2. **Aderência local + LGPD:** Integração nativa com bases públicas brasileiras (IBGE, AdaptaBrasil) e total segurança/privacidade de dados.
+3. **Custo-benefício:** Operação até 80% mais acessível que modelos tradicionais de consultoria.
+4. **Abordagem 360°:** Estratégia + dados + impacto em uma plataforma só, vs. soluções fragmentadas.
+5. **Validação enterprise:** Clientes como Suzano, Bracell e Prefeitura do Recife (CPSI).
 
 ## Posicionamento de Marca
 
@@ -162,6 +196,18 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 | 3º tri | Automação & Recorrência: benchmark setorial, motor de recomendação, alertas automáticos |
 | 4º tri | Consolidação & Expansão: 25+ clientes ativos, aprimoramento da IA |
 
+## Mercado Endereçável (TAM/SAM/SOM)
+
+Quantificação canônica (atualizada com inscrição WOW Batch #34, abr/2026):
+
+| Camada | Tamanho | Composição |
+|--------|---------|-------------|
+| **TAM (Total Addressable Market)** | 880 mil organizações | Terceiro setor + empresas com programa ESG no Brasil |
+| **SAM (Serviceable Addressable Market)** | 21 mil organizações | Subset com maturidade digital intermediária (planilhas + ferramentas desconectadas) |
+| **SOM (Serviceable Obtainable Market — 3 anos)** | 2 mil organizações | Subset acessível via canais atuais da Manacá |
+| Mercado global de investimento de impacto | US$ 1,571 trilhão | GIIN 2025 — crescimento 21% a.a. |
+| Investimento social privado Brasil (GIFE) | R$ 4,8 bilhões | Edição 2022 do Censo GIFE |
+
 ## Proposta de Valor para Editais
 
 A Flora se posiciona na interseção de:
@@ -181,10 +227,10 @@ A Flora se posiciona na interseção de:
 
 | Campo | Valor |
 |-------|-------|
-| Registro de software | [PREENCHER] |
-| Patentes | [PREENCHER] |
-| Marca registrada | [PREENCHER] |
-| Código-fonte | Proprietário da Manacá |
+| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] — em processo |
+| Patentes | [PERGUNTAR-AO-USUÁRIO: confirmar se há intenção de patente] |
+| Marca registrada "Flora" | Em processo de depósito no INPI |
+| Código-fonte | Proprietário da Manacá (proteção Lei 9.610/98 + acordos confidencialidade com PJs) |
 
 ## Ativos Reutilizáveis
 
@@ -192,6 +238,6 @@ Materiais já produzidos do Flora que podem ser reaproveitados em editais futuro
 
 | Tipo | Descrição | Caminho/Link |
 |------|-----------|--------------|
-| _(placeholder)_ | _Adicionar conforme produzir ativos para Flora_ | _[PREENCHER]_ |
+| _(placeholder)_ | _Adicionar conforme produzir ativos para Flora_ | _[PERGUNTAR-AO-USUÁRIO: lista de ativos disponíveis (vídeos, decks, screenshots Flora) com caminho/link]_ |
 
 **Convenção:** ao reaproveitar um ativo, copiar para o diretório do novo edital (não link cross-projeto). Atualizar esta tabela quando produzir asset novo significativo (cover, vídeo, deck, imagem hero).
