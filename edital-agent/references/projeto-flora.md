@@ -10,12 +10,9 @@ canonical_for:
   - flora_ativos_reusaveis
 derived_from: []
 stale_fields:
-  - trl ([PERGUNTAR-AO-USUÁRIO] estimativa TRL 6-7 com base em projetos validados, mas precisa confirmação técnica)
-  - stack_tecnologica ([PERGUNTAR-AO-USUÁRIO] linguagens, frameworks, infra cloud, modelos IA usados)
-  - usuarios_ativos ([PERGUNTAR-AO-USUÁRIO] número exato de usuários ativos hoje)
+  - pricing_planos_valores (definição em andamento — perguntar à Rayssa o valor R$/mês vigente de cada plano quando edital exigir)
+  - usuarios_ativos (número dinâmico — hoje 2; confirmar valor atualizado antes de cada submissão)
   - registro_software_inpi ([PERGUNTAR-AO-USUÁRIO] status atual do depósito)
-  - patente ([PERGUNTAR-AO-USUÁRIO] confirmar se há patente prevista ou apenas registro de software)
-  - pricing_planos_valores ([PERGUNTAR-AO-USUÁRIO] valor R$/mês de cada plano: Impulso, Estruturação, Estratégico)
 ---
 
 # Projeto Flora — Plataforma de Monitoramento e Gestão de Impacto
@@ -28,9 +25,9 @@ Flora é uma plataforma SaaS (Software as a Service) desenvolvida pela Manacá T
 
 | Campo | Valor |
 |-------|-------|
-| TRL (Technology Readiness Level) | [PERGUNTAR-AO-USUÁRIO: TRL atual com evidências] — estimativa baseline TRL 6-7 (MVP em validação com primeiros clientes SaaS) |
-| Stack Tecnológica | [PERGUNTAR-AO-USUÁRIO: linguagens, frameworks, infra cloud, modelos IA] |
-| Usuários ativos | [PERGUNTAR-AO-USUÁRIO: número exato] — Bbutton confirmado como cliente recorrente com 2 projetos |
+| TRL (Technology Readiness Level) | **TRL 6** (MVP funcional com testes em ambiente relevante e usuários reais) |
+| Stack Tecnológica | Consultar projeto Flora no repositório GitHub da Manacá quando edital de Trilha B exigir detalhamento técnico (FAPES, FINEP, FAPESP, EMBRAPII). Trilha A normalmente não pede. |
+| Usuários ativos | **2 usuários ativos hoje** (número dinâmico — confirmar valor atualizado antes de cada submissão) |
 | Servidor | EC2 AWS (alias SSH: Flora) |
 | Reconhecimento | **Selo "Projeto com Propósito" — PMI-ES (2026)** |
 | Status comercial | Primeiros clientes SaaS em validação (Bbutton recorrente) — transição bootstrapped consultoria → produto |
@@ -114,17 +111,17 @@ A Flora aplica IA em três modalidades complementares:
 
 ## Pricing
 
-Modelo atual (atualizado conforme inscrição Sebrae Startups 2026): **três planos de assinatura mensal escalonados** + consultoria estratégica.
+Modelo atual (atualizado conforme inscrição Sebrae Startups 2026): **três planos de assinatura mensal escalonados** + consultoria estratégica. **Valores R$/mês ainda em definição** (mai/2026).
 
 | Plano | Foco | Público-alvo | Valor R$/mês |
 |-------|------|--------------|--------------|
-| **Impulso** | Onboarding e gestão básica de impacto | ONGs e Institutos com 1-2 projetos | [PERGUNTAR-AO-USUÁRIO] |
-| **Estruturação** | Múltiplos projetos + dashboards + suporte | Fundações e aceleradoras com portfólio | [PERGUNTAR-AO-USUÁRIO] |
-| **Estratégico** | Customização total + IA preditiva + suporte dedicado | Grandes institutos, empresas com ISP, governos | [PERGUNTAR-AO-USUÁRIO] |
+| **Impulso** | Onboarding e gestão básica de impacto | ONGs e Institutos com 1-2 projetos | em definição |
+| **Estruturação** | Múltiplos projetos + dashboards + suporte | Fundações e aceleradoras com portfólio | em definição |
+| **Estratégico** | Customização total + IA preditiva + suporte dedicado | Grandes institutos, empresas com ISP, governos | em definição |
 | Consultoria estratégica | Projetos discretos (Teoria da Mudança, SROI, dashboards) | A partir de R$ 3.000,00 (ticket médio R$ 16.000,00) |
 | Modelo de aquisição | Freemium para diagnóstico → conversão para plano pago |
 
-> **Nota crítica:** os valores R$/mês de cada plano variam conforme negociação com o cliente. Antes de declarar valor em formulário de edital, **perguntar à Rayssa** o valor vigente do plano em questão. Histórico legado (não usar): plano Básico R$ 49,90 / Completo R$ 299,00 — descontinuado.
+> **Nota crítica:** os valores R$/mês dos 3 planos ainda não estão finalizados. Antes de declarar qualquer valor em formulário de edital, **perguntar à Rayssa** o valor vigente do plano em questão. Histórico legado (não usar): plano Básico R$ 49,90 / Completo R$ 299,00 — descontinuado.
 
 ## Concorrentes
 
@@ -227,10 +224,11 @@ A Flora se posiciona na interseção de:
 
 | Campo | Valor |
 |-------|-------|
-| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] — em processo |
-| Patentes | [PERGUNTAR-AO-USUÁRIO: confirmar se há intenção de patente] |
+| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] |
+| Patentes | **Não há patentes para Flora.** Proteção via Lei 9.610/98 (direito autoral sobre código-fonte) + segredo industrial sobre algoritmos de IA proprietários. |
 | Marca registrada "Flora" | Em processo de depósito no INPI |
-| Código-fonte | Proprietário da Manacá (proteção Lei 9.610/98 + acordos confidencialidade com PJs) |
+| Marca-mãe "Manacá" | **Registrada no INPI** (única marca registrada confirmada do grupo) |
+| Código-fonte | Proprietário da Manacá (acordos confidencialidade com PJs) |
 
 ## Ativos Reutilizáveis
 

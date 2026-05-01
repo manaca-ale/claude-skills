@@ -127,8 +127,10 @@ O CPSI permite ao poder público contratar startups para desenvolver, testar e v
 |-------|-------|
 | Código-fonte | Proprietário da Manacá (proteção Lei 9.610/98) |
 | Modelos de IA | Treinados pela equipe Manacá (datasets próprios + dados públicos) |
-| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] — em processo |
+| Patentes | **Não há patentes para SAÍRA.** Proteção via direito autoral + segredo industrial. |
+| Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] |
 | Marca registrada "SAÍRA" | Em processo de depósito no INPI |
+| Marca-mãe "Manacá" | **Registrada no INPI** (única marca registrada confirmada do grupo) |
 
 ## Projetos Irmãos / PD&I
 

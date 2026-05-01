@@ -12,8 +12,8 @@ canonical_for:
 derived_from:
   - empresa-manaca.md  # nomes_e_percentuais_socios sempre validar contra empresa-manaca
 stale_fields:
-  - lattes_urls ([PERGUNTAR-AO-USUÁRIO] pendente para todos os membros)
-  - colaboradores_4_e_5 ([PERGUNTAR-AO-USUÁRIO] equipe atual tem 5 colaboradores fixos; arquivo lista apenas 3 nomes — confirmar identidade dos 2 restantes com Rayssa)
+  - lattes_urls (não relevante para os editais atuais — só importa para FAPs estaduais que exigem vínculo acadêmico)
+  - colaboradores_4_e_5 (Rayssa declarou "7 membros fixos, 71% mulheres" no PES 2026 mas só 3 colaboradores estão nomeados aqui; a info dos 2 restantes não está nos 3 editais submetidos — perguntar diretamente à Rayssa quando edital exigir composição completa)
 ---
 
 # Equipe Manacá Tecnologias Sociais
@@ -190,14 +190,14 @@ stale_fields:
 
 ## Composição da Equipe (resumo)
 
-> **ATENÇÃO — campo a confirmar:** segundo dados oficiais reportados pela CEO em formulários de inscrição (PES 2026 — Folha S.Paulo), a equipe Manacá é composta por **7 membros fixos** (2 sócios + 5 colaboradores). Este arquivo lista 3 colaboradores nomeados; os 2 restantes precisam ser identificados e adicionados aqui antes do próximo edital. Marcar com `[PERGUNTAR-AO-USUÁRIO: nome dos 2 colaboradores fixos faltantes]` em qualquer rascunho que dependa desse dado.
+> **ATENÇÃO — discrepância documentada:** Rayssa declarou "7 membros fixos, 5 mulheres (71%)" no formulário PES 2026 (Folha de S.Paulo, 30/04/2026). Este arquivo lista 3 colaboradores nomeados (4 com a CEO mulher = só atinge 71% se total = 7). A identidade dos 2 colaboradores fixos restantes **não consta** nos 3 editais submetidos em abr/2026 (PES, WOW, Sebrae). Antes do próximo edital que exigir composição completa de equipe, **perguntar diretamente à Rayssa** quem são os 2 nomes faltantes (ou se o número 7 incluía consultores).
 
 | Categoria | Quantidade | Detalhes |
 |-----------|-----------|----------|
 | Sócios-fundadores | 2 | Rayssa Mendes (CEO 65%), Alexandre Coleto (CTO 35%) |
 | Colaboradores fixos nomeados neste arquivo | 3 | Rafaela Reis, Rafaella Gobbo, Gabrielle Alves |
-| Colaboradores fixos a confirmar | 2 | [PERGUNTAR-AO-USUÁRIO: nomes, cargos, formações] |
-| **Total fixo** | **7** | |
+| Colaboradores fixos não documentados | 2 | identidade não consta nos editais — perguntar à Rayssa antes de declarar em formulário |
+| **Total fixo declarado em PES 2026** | **7** | (5 mulheres / 71%, conforme declaração da CEO) |
 | Consultores acionáveis | 2 | Ângelo Viana (Impacto/Métodos), Luan Orion (Cientista de Dados) |
 
 ## Diversidade Estrutural
@@ -211,7 +211,7 @@ Conforme reportado em inscrições oficiais da empresa (PES 2026):
 | Etnia | 1 colaborador autodeclarado negro |
 | LGBTQIA+ | 2 membros oficialmente autodeclarados |
 | Origem regional | Pluralidade Sudeste / Nordeste |
-| PCDs | [PERGUNTAR-AO-USUÁRIO: confirmar antes de declarar em edital] |
+| PCDs | **0** (nenhum membro PCD na equipe atual — confirmado por Rayssa em mai/2026) |
 
 **Notas para preenchimento:** quando o edital exigir composição étnico-racial específica (ex: PES 2026 Q38), pedir à Rayssa para validar o número antes de submeter. **Nunca inventar dados de autodeclaração.**
 
@@ -224,4 +224,4 @@ Conforme reportado em inscrições oficiais da empresa (PES 2026):
 - Reconhecimento internacional: AI4GOOD Harvard/MIT (ResiliêncIA + BT Tracker), Sciences Po, Columbia University, ICTP
 - Modelo flexível: 7 fixos + 2 consultores especializados (PhD em IA/dados, consultor de impacto) acionados por projeto
 - Certificações: PMP, Insper (Impacto Social), Lean/Ágil (Northern Illinois/Tennessee)
-- Lattes de cada membro: [PERGUNTAR-AO-USUÁRIO: URLs do Currículo Lattes]
+- Lattes de cada membro: **não é foco** para os editais atuais. Só relevante quando o edital exigir explicitamente (FAPs estaduais, EMBRAPII com PR doutor, FAPESP PIPE) — nesses casos, perguntar à Rayssa antes da Fase 5c.
