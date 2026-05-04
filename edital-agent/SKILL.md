@@ -897,6 +897,31 @@ Sem o Caderno, a equipe que submete precisa abrir 5+ docs diferentes, cada um co
 
 **Output:** `07-submission-guide.md`
 
+### Fase 7.5: PÓS-SUBMISSÃO (logo após apertar "Enviar")
+
+Executar no MESMO DIA ou nas 24h após submissão. Não esperar o resultado.
+
+1. **STATUS.md local** — reescrever cabeçalho indicando submissão concluída:
+   - Substituir "Fase atual: 6/7" por "✅ SUBMETIDO em DD/MM/AAAA — aguardando resultado"
+   - Adicionar seção `## Submissão` com data, plataforma, decisões finais (cenário escolhido, valores)
+   - Adicionar seção `## Cronograma — próximos passos` com tabela das datas do edital (resultado preliminar, recursos, etapas seguintes, premiação)
+   - Adicionar seção `## Ações pendentes` (acompanhar e-mail, bloquear agenda para próximas etapas, etc.)
+
+2. **ClickUp** — atualizar 3 coisas:
+   - **Status** → `aguardando resultado` (via PUT `/task/{id}`)
+   - **Due date** → mudar de "data submissão" (já passou) para **data esperada de resultado** (extraída do edital)
+   - **Comment** → postar resumo do que foi submetido, decisões finais, cronograma com datas, ações pendentes, links — em texto plano ou bullets (NÃO usar tabelas markdown — ver gotcha §11.1 em `gotchas-editais.md`)
+
+3. **Google Doc rascunho** — inserir banner no topo:
+   - "✅ INSCRIÇÃO SUBMETIDA em DD/MM" + sumário do que foi submetido + cronograma + link ClickUp
+   - Sinaliza ao time que aquele doc não é mais fonte de verdade — a versão canônica passa a ser o FAP/plataforma (via Exportar PDF)
+
+4. **Pasta `01. Submetidos/`** — se o edital ainda não está lá, mover seguindo o padrão estabelecido em §10.3 de `gotchas-editais.md` (subpasta com README, regulamento, respostas, link Drive)
+
+**Output:** STATUS.md atualizado + comentário no ClickUp + banner no Doc + pasta movida (se aplicável).
+
+> **Importância:** sem este passo, ninguém sabe se o doc é rascunho ou versão final, o ClickUp fica com due date passado sem ação, e quando o resultado sair (semanas/meses depois) ninguém lembrará exatamente o que foi submetido. A Fase 8 (Post-Mortem) depende deste registro pra comparar advocate vs red team vs resultado real.
+
 ### Fase 8: POST-MORTEM (após resultado)
 
 Executar quando o resultado do edital for divulgado:

@@ -357,3 +357,17 @@ Caso real Sebrae: a CEO usou a skill para gerar o doc de respostas mas o regulam
 ### 10.5 Estilo de redação canônico — extrair exemplos das vencedoras
 
 A CEO escreveu trechos excelentes nos 3 editais (ex: PES Q23, Q25, Q27, Q29; WOW TAM/SAM/SOM; Sebrae Q5, Q6). Esses trechos viraram **exemplos canônicos** na seção 13 de `guia-redacao-editais.md`. **Regra:** após cada inscrição, identificar 2-3 trechos que funcionaram bem e adicionar como exemplo canônico para reuso futuro.
+
+## 11. Lições Mulheres Inovadoras FINEP (2026-05-04)
+
+### 11.1 Tabelas markdown não renderizam em Google Docs comments e ClickUp
+
+Pipe-style tables (`| col | col |`) **não renderizam** como tabela visual em comments/replies de Google Docs nem em comments do ClickUp — aparecem como texto cru e o leitor humano precisa decifrar pipes mentalmente, o que quebra a leitura.
+
+**Caso real:** comentários postados no doc de revisão da Rayssa e no ClickUp da Mulheres Inovadoras com tabelas em pipes ficaram ilegíveis; a CEO sinalizou que a formatação não estava virando tabela visual.
+
+**Regra:**
+- Para comments/replies em Google Docs e ClickUp: usar **plain text com line breaks** ou **bullet lists** com pares chave-valor (ex: `• Edital → Data — Marco`)
+- Tabelas markdown continuam OK em chat com o usuário (CommonMark renderiza)
+- Para tabelas REAIS no body do Doc (não em comments): usar `batch_update_doc` com `insert_table` — tabelas inseridas via API renderizam visualmente; pipes em texto não.
+- Memory pessoal correspondente: `feedback_no_markdown_tables_in_external_tools.md`
