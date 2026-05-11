@@ -1,6 +1,6 @@
 ---
-last_verified: 2026-05-01
-next_review: 2026-08-01
+last_verified: 2026-05-06
+next_review: 2026-08-06
 type: data
 canonical_for:
   - equipe_cvs_detalhados
@@ -13,7 +13,7 @@ derived_from:
   - empresa-manaca.md  # nomes_e_percentuais_socios sempre validar contra empresa-manaca
 stale_fields:
   - lattes_urls (não relevante para os editais atuais — só importa para FAPs estaduais que exigem vínculo acadêmico)
-  - colaboradores_4_e_5 (Rayssa declarou "7 membros fixos, 71% mulheres" no PES 2026 mas só 3 colaboradores estão nomeados aqui; a info dos 2 restantes não está nos 3 editais submetidos — perguntar diretamente à Rayssa quando edital exigir composição completa)
+  - colaborador_5_email_telefone (Gabriel Candelaria identificado no Lab Procel CP02/2026 mas dados de contato e CPF ainda não documentados — perguntar à Rayssa antes de declarar em formulário)
 ---
 
 # Equipe Manacá Tecnologias Sociais
@@ -155,6 +155,32 @@ stale_fields:
 
 ---
 
+### Gabriel Candelaria — Engenheiro de IA / Pesquisador Júnior
+- **Email:** [preencher — perguntar à Rayssa]
+- **Telefone:** [preencher]
+- **CPF:** [preencher]
+- **Localização:** [preencher — provável região de Curitiba/PR]
+
+**Formação:**
+- Engenharia de Computação — UTFPR (recém-formado)
+
+**Experiência:**
+- Engenheiro de IA na Manacá (atual) — desenvolvimento dos modelos de visão computacional do SAÍRA (M2 — modelo de detecção, TRL 4 → 5)
+- Portfólio acadêmico/projetos: BrainCancerDetection (comparação de 3 arquiteturas de Deep Learning — CNN, MLP, DNN), DetetiveDeObjetos (visão computacional via webcam), Reinforcement Learning (PPO, NEAT), LLMs locais com Ollama + FastAPI
+- Stack: TensorFlow, OpenCV, YOLO/CNN, Python
+
+**Atribuições:**
+- Treinamento e ajuste de modelos de Deep Learning (YOLO/CNN)
+- Pipeline de visão computacional do SAÍRA
+- Operação sob mentoria do CTO Alexandre Coleto (gap de senioridade compensado pela articulação técnica direta)
+
+**Notas:**
+- Identificado em 16/04/2026 no doc Team Fit Analysis do edital Lab Procel II CP02/2026 (SENAI-RJ × PROCEL/ENBPar)
+- Para FAPES/editais que exigem Lattes: confirmar se Lattes está atualizado; senioridade exige posicionamento como "pesquisador júnior sob mentoria do CTO"
+- Para bolsas FAPES: como recém-formado (<2 anos), elegível DTI-C (R$ 2.500/mês). Para BIPI-I exige 1 ano comprovado em PD&I
+
+---
+
 ## Consultores (disponíveis por projeto)
 
 > Ângelo e Luan não são mais parte da equipe fixa da Manacá, mas podem ser acionados como consultores em projetos específicos que demandem suas especialidades.
@@ -190,14 +216,13 @@ stale_fields:
 
 ## Composição da Equipe (resumo)
 
-> **ATENÇÃO — discrepância documentada:** Rayssa declarou "7 membros fixos, 5 mulheres (71%)" no formulário PES 2026 (Folha de S.Paulo, 30/04/2026). Este arquivo lista 3 colaboradores nomeados (4 com a CEO mulher = só atinge 71% se total = 7). A identidade dos 2 colaboradores fixos restantes **não consta** nos 3 editais submetidos em abr/2026 (PES, WOW, Sebrae). Antes do próximo edital que exigir composição completa de equipe, **perguntar diretamente à Rayssa** quem são os 2 nomes faltantes (ou se o número 7 incluía consultores).
+> **STATUS 06/05/2026:** 4 colaboradores fixos nomeados (3 mulheres + 1 homem). Com a CEO Rayssa Mendes incluída, são 4 mulheres em uma equipe fixa de 6 pessoas (~67%). O número de "7 fixos / 71% mulheres" declarado por Rayssa no PES 2026 ainda diverge em 1 pessoa — provavelmente inclui consultores ou um membro ainda não documentado neste arquivo. Perguntar à Rayssa antes de qualquer formulário que exija contagem exata.
 
 | Categoria | Quantidade | Detalhes |
 |-----------|-----------|----------|
 | Sócios-fundadores | 2 | Rayssa Mendes (CEO 65%), Alexandre Coleto (CTO 35%) |
-| Colaboradores fixos nomeados neste arquivo | 3 | Rafaela Reis, Rafaella Gobbo, Gabrielle Alves |
-| Colaboradores fixos não documentados | 2 | identidade não consta nos editais — perguntar à Rayssa antes de declarar em formulário |
-| **Total fixo declarado em PES 2026** | **7** | (5 mulheres / 71%, conforme declaração da CEO) |
+| Colaboradores fixos nomeados neste arquivo | 4 | Rafaela Reis, Rafaella Gobbo, Gabrielle Alves, Gabriel Candelaria |
+| **Total fixo documentado** | **6** | (4 mulheres / 67%) |
 | Consultores acionáveis | 2 | Ângelo Viana (Impacto/Métodos), Luan Orion (Cientista de Dados) |
 
 ## Diversidade Estrutural
