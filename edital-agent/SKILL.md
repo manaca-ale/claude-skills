@@ -187,6 +187,48 @@ A maioria desses erros teria sido evitada com a Sub-fase 5a.0. **Esta é regra f
 
 ---
 
+## ⛔ Regra Absoluta: NUNCA Adivinhar Campos de Formulário
+
+**A skill NUNCA pode produzir o Caderno de Preenchimento, textos copy-paste ou qualquer artefato que mapeie campos de formulário sem ter visto o formulário real.** Esta regra é tão crítica quanto "NUNCA inventar dados" — porque um Caderno baseado em campos imaginados produz textos com tamanho errado, dropdowns com opções inexistentes, declarações Sim/Não com fraseado divergente do oficial, e gera retrabalho na hora da submissão (com prazo curto).
+
+### O que está protegido pela regra
+
+- **Nomes exatos dos campos** (label que aparece na plataforma)
+- **Tipo de cada campo** (texto curto, textarea, dropdown, multi-select, radio, checkbox, upload)
+- **Limite de caracteres** (textos calibrados para 500 chars falham em campos de 250)
+- **Opções literais de dropdowns/combobox** (não dá pra adivinhar "Validação/Operação/Tração" se a plataforma usa "Ideação/MVP/Escala")
+- **Texto integral de declarações Sim/Não** (o avaliador precisa marcar EXATAMENTE o que a plataforma escreveu)
+- **Obrigatoriedade de cada campo** (campo opcional com texto longo pode penalizar a leitura da banca)
+- **Ordem das abas/seções** (afeta a sequência do copy-paste)
+- **Anexos exigidos** (tamanho máximo, formato, restrição de acesso)
+
+### Inferir do regulamento NÃO substitui mapear o formulário
+
+O regulamento descreve **critérios de avaliação** (Quadro 3, item 13, declarações obrigatórias do item 23). **Não descreve os campos do formulário.** Inferir "Quadro 3 com 6 dimensões = 6 campos de texto longo" é palpite — a plataforma pode ter 12 abas, agrupar dimensões, pedir respostas com limite curto, ou exigir formato estruturado (bullets, dropdown).
+
+### Ação obrigatória quando o formulário exige login
+
+1. **Identificar na Fase 1 (Ingestão)** se a plataforma de submissão exige login para ver os campos
+2. Se exigir login, **invocar o workflow Playwright** em [references/mapeamento-formularios-playwright.md](references/mapeamento-formularios-playwright.md) ANTES de produzir qualquer texto da Fase 5
+3. Se não tiver acesso à conta da CEO/representante, **pedir explicitamente** via AskUserQuestion: "Para mapear os campos reais da Etapa 2, preciso que você (a) compartilhe a sessão Playwright supervisionada, ou (b) faça login e me envie screenshots de cada aba, ou (c) submeta a Etapa 1 agora para receber o link e eu mapeio depois"
+4. **Documentar cada campo** em `07-form-fields.md` (Trilha A) ou integrar em `01-edital-parsed.md` (Trilha B), com: nome do campo, tipo, limite de caracteres, obrigatoriedade, opções de dropdown, texto integral de declarações
+5. **Só após mapear**, produzir os textos calibrados aos campos reais
+
+### Não-inferência: o que é correto fazer
+
+- ✅ Inferir as **dimensões avaliativas** que o formulário cobrirá (do Quadro 3 do regulamento)
+- ✅ Preparar **textos-pilha** de tamanhos variados (250c, 500c, médio, longo) como matéria-prima
+- ✅ Documentar declarações **previstas pelo regulamento** (item 23, 32, 57, 58)
+- ❌ Listar campos específicos do formulário como se fossem certos
+- ❌ Escrever "Pergunta tipo: 'Qual a tese de mudança?'" quando o formulário pode pedir 3 campos separados sobre impacto
+- ❌ Calibrar texto para limite que **não foi verificado**
+
+### Caso real (mai/2026)
+
+Durante a inscrição do InovAtiva de Impacto 2026, a skill produziu o Caderno de Preenchimento com 7 "campos esperados" da Etapa 2 (Seções H-N do `05-formulario-respostas.md`), inferidos do Quadro 3 + padrões de aceleração. **Os campos NÃO foram mapeados na plataforma real** (que exige login). A CEO Rayssa identificou a falha. O Caderno era estimativa, não certeza — risco de retrabalho na submissão. **A skill deve ter parado na Fase 1 e pedido acesso ao formulário antes de prosseguir.**
+
+---
+
 ## Princípios de Escrita PT-BR (regras INVIOLÁVEIS)
 
 **Tudo que esta skill produz é em português brasileiro completo, com acentuação correta desde o primeiro rascunho.** Acentos não são "polish final" — são parte da escrita. Pular acentos é pular qualidade.
@@ -473,7 +515,9 @@ Ao avaliar Go/No-Go, responder:
    - **Requisitos de elegibilidade:** Requisitos-chave
 5. **Determinar trilha:** Classificar como Trilha A ou B (ver tabela de critérios acima)
 
-6. **Mapear a plataforma de submissão** — se a plataforma exige **login** para ver os campos dos formulários (ex.: FINEP FAP, Portal da Inovação da Indústria, SIGFAPES, SAGe), **invocar o workflow Playwright** descrito em [references/mapeamento-formularios-playwright.md](references/mapeamento-formularios-playwright.md). Output: `07-form-fields.md` (Trilha A) ou integrar em `01-edital-parsed.md` (Trilha B). Campos desconhecidos descobertos tarde geram retrabalho (precisa revisitar textos que já tinham sido aprovados). Para cada aba, capturar: nome do campo, tipo (dropdown/texto/textarea/upload), limite de caracteres, obrigatoriedade, opções de combobox e texto integral de declarações Sim/Não.
+6. **Mapear a plataforma de submissão (OBRIGATÓRIO — NÃO PULAR)** — se a plataforma exige **login** para ver os campos dos formulários (ex.: FINEP FAP, Portal da Inovação da Indústria, SIGFAPES, SAGe, hub.inovativa.online), **invocar o workflow Playwright** descrito em [references/mapeamento-formularios-playwright.md](references/mapeamento-formularios-playwright.md). Se a skill não tiver acesso à conta, **pedir ajuda ao usuário** via AskUserQuestion antes de prosseguir — NUNCA inferir campos do regulamento e seguir como se fossem certos (ver "⛔ Regra Absoluta: NUNCA Adivinhar Campos de Formulário" acima). Output: `07-form-fields.md` (Trilha A) ou integrar em `01-edital-parsed.md` (Trilha B). Campos desconhecidos descobertos tarde geram retrabalho (precisa revisitar textos que já tinham sido aprovados). Para cada aba, capturar: nome do campo, tipo (dropdown/texto/textarea/upload), limite de caracteres, obrigatoriedade, opções de combobox e texto integral de declarações Sim/Não.
+
+> **Bloqueador da Fase 5:** se a Fase 1 não conseguiu mapear o formulário (login indisponível, plataforma offline), **a produção da Fase 5 fica condicionada** ao mapeamento. Produzir matéria-prima (textos-pilha de tamanhos variados, fatos canônicos, dados consolidados) é permitido — produzir Caderno de Preenchimento com "campos esperados" inferidos do regulamento NÃO é.
 
 **Output:** `01-edital-parsed.md`
 
@@ -817,6 +861,8 @@ Cada gatilho acionado → bloqueador ou mitigação explícita antes de prossegu
 **Output:** `06-quality-review.md`
 
 ### Fase 7: GUIA DE SUBMISSÃO (Submission Guide)
+
+> **Pré-requisito ABSOLUTO:** o mapeamento de campos da Fase 1 (passo 6) deve estar concluído antes de iniciar a Fase 7. Se a plataforma exige login e o mapeamento foi pulado, **parar e voltar para a Fase 1** — pedir ao usuário acesso à plataforma via Playwright supervisionado, screenshots, ou submissão da Etapa 1 para mapear depois. Produzir Caderno de Preenchimento com campos inferidos do regulamento é violação direta de "⛔ Regra Absoluta: NUNCA Adivinhar Campos de Formulário". Ver caso real InovAtiva 2026 documentado naquela seção.
 
 > **Output primário desta fase:** o **"Caderno de Preenchimento"** — um Google Doc único consolidado na raiz da pasta do edital no Drive, nomeado `00. COMECE AQUI - Caderno de Preenchimento`. Esse é o doc que a pessoa que submete mantém aberto ao lado da plataforma e copia/cola os textos.
 

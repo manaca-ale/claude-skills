@@ -41,9 +41,10 @@ stale_fields:
 | Segmento | Negócio de Impacto Socioambiental |
 | Telefone comercial | (21) 98799-1064 |
 | Telefone cadastral | (11) 6303-8185 |
-| Email comercial | contato@manaca.net.br |
-| Email institucional (antigo) | contato@manaca.tech |
-| Email da dirigente (Rayssa) | rayssa@manaca.net.br |
+| **Email institucional (CANÔNICO — usar sempre)** | **contato@manaca.tech** |
+| Email comercial (legado, fallback) | contato@manaca.net.br |
+| **Email da dirigente (Rayssa) — CANÔNICO** | **rayssa@manaca.tech** |
+| Email da Rayssa (legado) | rayssa@manaca.net.br |
 | Email cadastral | rayssamendes2611@gmail.com |
 | Site | https://manaca.tech/ |
 | Instagram | @manaca.socialtech |
