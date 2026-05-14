@@ -226,8 +226,8 @@ A Flora se posiciona na interseção de:
 |-------|-------|
 | Registro de software | [PERGUNTAR-AO-USUÁRIO: status do depósito INPI] |
 | Patentes | **Não há patentes para Flora.** Proteção via Lei 9.610/98 (direito autoral sobre código-fonte) + segredo industrial sobre algoritmos de IA proprietários. |
-| Marca registrada "Flora" | Em processo de depósito no INPI |
-| Marca-mãe "Manacá" | **Registrada no INPI** (única marca registrada confirmada do grupo) |
+| Marca "Flora" | **Não registrada no INPI** (confirmado por Rayssa em 2026-05-15) |
+| Marca-mãe "Manacá" | **Não registrada no INPI** (confirmado por Rayssa em 2026-05-15 — correção da informação anterior) |
 | Código-fonte | Proprietário da Manacá (acordos confidencialidade com PJs) |
 
 ## Ativos Reutilizáveis
