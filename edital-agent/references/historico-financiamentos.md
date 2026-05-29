@@ -104,7 +104,10 @@ stale_fields:
 | 2023 | R$ 94.093,18 | R$ 130.000,00 | — | — |
 | 2024 | R$ 225.950,29 | R$ 0 | R$ 234.366,28 | 24% |
 | 2025 | R$ 125.630,17 | R$ 66.400,00 | R$ 208.854,14 | -7% |
-| **Total acumulado** | **R$ 567.491,48** | **R$ 255.600,00** | — | — |
+| 2026 (até mai) | R$ 198.677,42 | R$ 52.000,00 (Vai Tec) | — | — |
+| **Total acumulado (até mai/2026)** | **R$ 678.527,64** | **~R$ 358.000 (captação não-dilutiva ampla)** | — | — |
+
+> **Atualização mai/2026 (fonte: InovAtiva submetido):** faturamento últimos 12 meses = **R$ 259.846,27**; receita 2026-YTD subiu de R$ 167.064 (refs mar/2026) para **R$ 198.677,42**; acumulado desde 2022 = **R$ 678.527,64** (~R$ 678 mil). Captação não-dilutiva ampla (subvenção + bolsas + premiações) = **~R$ 358 mil** (a subvenção estrita segue R$ 255.600).
 
 ### Projeções 2026-2030
 
@@ -126,8 +129,13 @@ stale_fields:
 | Negócios de Impacto Socioambiental (FAPES 09/2022) | 2023 | R$ 69.660,00 |
 | Seedes — Neo Ventures | 2025 | R$ 100.000,00 |
 | Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA | 2025 | R$ 26.000,00 |
-| **Total subvenção** | | **R$ 255.660,00** |
-| Doação/premiação (Shell Iniciativa Jovem) | 2024 | R$ 5.000,00 |
+| Vai Tec — ADE Sampa / Prefeitura de SP | 2026 | R$ 52.000,00 (execução em curso) |
+| **Total subvenção (estrita)** | | **R$ 255.660,00** |
+| Bolsa (Centelha ES) | 2023 | R$ 26.000,00 |
+| Bolsa (Empreendedoras Tech) | 2025 | R$ 26.000,00 |
+| Premiação (Shell Iniciativa Jovem) | 2024/2025 | R$ 5.000,00 |
+| Premiação (Prêmio Mudar / Ensina Brasil) | 2025 | R$ 20.000,00 |
+| **Captação não-dilutiva ampla (subvenção + bolsas + premiações + aprovações 2026)** | | **~R$ 358.000,00** (valor canônico submetido InovAtiva) |
 
 ## Notas
 

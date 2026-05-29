@@ -34,12 +34,14 @@ O SAÍRA é uma solução tecnológica híbrida para monitoramento, fiscalizaç�
 | Campo | Valor |
 |-------|-------|
 | Marco legal | Lei Complementar nº 182/2021 (Marco Legal das Startups) |
-| Parceiros | Prefeitura do Recife + Manacá Tecnologias Sociais |
-| Modelo | Inovação aberta — chamada pública para startups |
-| Piloto | 10 pontos críticos, 10 câmeras, 10 bairros |
+| Parceiros | Prefeitura do Recife + Manacá Tecnologias Sociais (via EMPREL/SECTI e EMLURB) |
+| Modelo | Inovação aberta — chamada pública para startups (origem: edital Eita! Recife) |
+| Início do contrato | **dezembro de 2025** (confirmado InovAtiva mai/2026) |
+| Fase 1 — PoC/MVP | R$ 50 mil; 10 pontos críticos, 10 câmeras, 10 bairros |
 | Bairros do piloto | Imbiribeira, Brasília Teimosa, Santo Amaro, Prado, Porto da Madeira, Arruda, Torrões, Várzea, Jiquiá, Campo Grande |
-| Fase 2 (previsão) | Escala para ~150 pontos cobertos |
-| Perspectiva de contrato | Até R$ 8 milhões |
+| Fase 2 — Aceleração (prevista 2º sem/2026) | **até R$ 1,6 mi**; deployment com escala de 10 → **até 150 pontos** (Q3/2026) |
+| Fase 3 — Contrato de fornecimento | **até R$ 8 milhões**, até 4 anos (pós-aceleração) |
+| Duração das fases | 1 ano cada, prorrogável por +1 |
 
 O CPSI permite ao poder público contratar startups para desenvolver, testar e validar soluções inovadoras ainda inexistentes no mercado, com segurança jurídica e foco em resultados. Rompe com a lógica tradicional de compras públicas, aproximando o Estado da experimentação e da inovação.
 

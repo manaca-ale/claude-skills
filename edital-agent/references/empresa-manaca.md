@@ -1,7 +1,9 @@
 ---
-last_verified: 2026-05-01
+last_verified: 2026-05-29
 next_review: 2026-08-01
 type: data
+sources:
+  - "InovAtiva de Impacto 2026 — formulário submetido (texto azul = oficial), Drive doc 1CbgnKGMW7HaF6kLC-bElNinnk2fC7yBebFK9G01vO9k. Atualizou faturamento 2026-YTD, acumulado, captação ampla e listas de aceleração/prêmios em 2026-05-29."
 canonical_for:
   - cnpj
   - razao_social
@@ -86,11 +88,12 @@ Ser a principal referência no Brasil em estratégia de impacto e governança de
 
 | Métrica | Valor |
 |---------|-------|
-| Equipe fixa total | 7 (2 sócios + 5 colaboradores fixos) |
-| Sócios-fundadores | 2 (Rayssa CEO, Alexandre CTO) — após saída Ângelo em 05/09/2025 |
-| Colaboradores fixos | 5 (3 nomeados em equipe.md + 2 a confirmar) |
-| Consultores acionáveis por projeto | 2 (Ângelo Viana, Luan Orion) |
-| Diversidade declarada | 71% mulheres; 1 colaborador autodeclarado negro; 2 LGBTQIA+ autodeclarados |
+| Sócios-fundadores | 2 (Rayssa CEO 65%, Alexandre CTO 35%) — após saída Ângelo em 05/09/2025 |
+| Colaboradores fixos | 4 (confirmados InovAtiva mai/2026): Rafaela Reis (Gerente de Projetos), Rafaella Gobbo (Comercial e Parcerias), Gabrielle Alves (Product Designer + Eng. de IA), Gabriel Candelária (Eng. de IA Jr.) |
+| Consultores acionáveis por projeto | 2 (Ângelo Viana — Impacto/Métodos; Luan Orion — Cientista de Dados PhD UFBA) |
+| Back-office (apoio) | Assistente Geral, Administrativa e Comercial; meio terceirizado (Marketing, Jurídico, Contabilidade) |
+| Equipe canônica | **2 sócios + 4 colaboradores fixos** (núcleo de 6) + 2 consultores acionáveis + back-office. Em formulários que pedem "tamanho da equipe sem sócios", a Manacá declarou **8** no InovAtiva (fixos + back-office + consultores). |
+| Diversidade declarada | **67% mulheres** na equipe fixa (4 de 6, incl. CEO) — valor canônico submetido InovAtiva |
 | Clientes pagantes (Manacá consultoria) | 14 |
 | Clientes plataforma Flora (SaaS) | 1 (Bbutton, 2 projetos) — primeiros clientes SaaS em validação |
 | Clientes recorrentes | 2 (Ensina Brasil, Bbutton) |
@@ -99,9 +102,11 @@ Ser a principal referência no Brasil em estratégia de impacto e governança de
 | Municípios atendidos | 14 |
 | Estados atendidos | 11 |
 | Regiões do Brasil | 3 |
-| Investimentos recebidos (editais) | R$ 255.600,00 |
-| Faturamento total (até mai/2026) | R$ 646.915,17 |
-| Crescimento médio anual | 140% |
+| Captação não-dilutiva (ampla — subvenção + bolsas + premiações) | ~R$ 358.000,00 (submetido InovAtiva mai/2026) |
+| └ dos quais subvenção econômica estrita | R$ 255.600,00 |
+| Faturamento últimos 12 meses (mai/2025–abr/2026) | **R$ 259.846,27** (submetido InovAtiva mai/2026) |
+| Faturamento total acumulado (desde 2022, até mai/2026) | **R$ 678.527,64** (~R$ 678 mil) |
+| Crescimento | **CAGR ~75% a.a.** (canônico, submetido InovAtiva mai/2026) |
 
 ## Atuação Geográfica
 
@@ -176,10 +181,15 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 - Shell Iniciativa Jovem (2024)
 - Potência UP — Artemisia (2025)
 - Seedes — Neo Ventures (2025)
-- Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA (2025)
-- AI4GOOD — Brazil Conference Harvard/MIT (2025) — competição vencedora
+- Empreendedoras Tech — Sebrae/MDIC/ABDI/ITA (2025) — vinculado à plataforma Sebrae Startups
+- AI4GOOD — Brazil Conference Harvard/MIT (2025) — competição vencedora (projetos ResiliêncIA e BT Tracker)
 - ACE Ventures / FUNSES (2025)
 - BNDES Garagem (2025)
+- Prêmio Mudar — Ensina Brasil (2025) — premiação R$ 20 mil
+- Programa de Startups do ESX (2025/2026) — rodadas de investimento/negócio em curso
+- Vai Tec — ADE Sampa / Prefeitura de São Paulo (2026) — aceleração + subvenção R$ 52 mil
+- WOW Aceleradora Batch #34 (2026) — em fase de entrevistas (tese equity)
+- Cadastro nível **Ouro** — Plataforma CADIMPACTO (MDIC); reconhecimento NISA pela SEAMA-ES
 
 ## Dados Financeiros
 
@@ -190,9 +200,11 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 | Receita bruta 2023 | R$ 94.093,18 |
 | Receita bruta 2024 | R$ 225.950,29 |
 | Receita bruta 2025 (parcial) | R$ 125.630,17 |
-| Receita bruta 2026 (até mai) | R$ 167.064,00 |
-| Faturamento total acumulado (até mai/2026) | R$ 646.915,17 |
-| Crescimento médio anual | 140% |
+| Receita bruta 2026 (até mai) | **R$ 198.677,42** (submetido InovAtiva; refs antigas: R$ 167.064 — atualizado mai/2026) |
+| Faturamento últimos 12 meses (mai/2025–abr/2026) | **R$ 259.846,27** |
+| Faturamento total acumulado (2022→mai/2026) | **R$ 678.527,64** |
+| Crescimento | **CAGR ~75% a.a.** (canônico, submetido InovAtiva mai/2026) |
+| Detalhamento mês-a-mês 2026 (abaixo) | parcial/anterior; o total canônico 2026-YTD é R$ 198.677,42 |
 | Custos/despesas 2024 | R$ 234.366,28 |
 | Margem 2024 | 24% |
 
@@ -211,7 +223,10 @@ Plataforma digital escalável para monitoramento e gestão de impacto socioambie
 |-----|--------------|
 | 2023 | R$ 130.000,00 (Centelha ES + NIS combinados) |
 | 2025 | R$ 126.000,00 (Seedes R$100K + ET R$26K) |
-| **Total captado em subvenção** | **R$ 255.600,00** |
+| 2026 | R$ 52.000,00 (Vai Tec / ADE Sampa — Prefeitura de SP, execução em curso) |
+| **Total captado em subvenção econômica (estrita)** | **R$ 255.600,00** |
+
+> **Captação não-dilutiva ampla (conforme submetido InovAtiva mai/2026): ~R$ 358 mil.** Inclui, além da subvenção estrita: bolsas (Centelha R$26k, Empreendedoras Tech R$26k), premiações institucionais (Prêmio Destaque Shell 2025 R$5k; Prêmio Mudar/Ensina Brasil 2025 R$20k) e aprovações 2026 (Vai Tec/ADE Sampa R$52k). ⚠️ A soma exata dos itens listados tem pequena variação de arredondamento entre versões (~R$358–399 mil dependendo do que se conta) — usar "~R$ 358 mil" como número canônico submetido e detalhar a composição quando o edital exigir granularidade.
 
 ### Custos Fixos (estimativa para formulários quantitativos)
 

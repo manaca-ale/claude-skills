@@ -404,7 +404,7 @@ Esta seção compila trechos retirados de 3 inscrições reais da Manacá em edi
 > - 14 municípios atendidos em 11 estados e 3 regiões: Vitória/ES, Cariacica/ES, São Paulo/SP, Rio de Janeiro/RJ, Belo Horizonte/MG, Alagoinhas/BA, Caruaru/PE, Caucaia/CE, São Luís/MA, Campo Grande/MS, Cuiabá/MT, Águas Lindas de GO, Luziânia/GO, Aparecida de Goiânia/GO
 > - 14 clientes pagantes, 19 projetos entregues, 5 workshops/formações
 > - Primeiros clientes SaaS na plataforma Flora
-> - 7 colaboradores fixos, equipe majoritariamente feminina (71%)
+> - 2 sócios + 4 colaboradores fixos, equipe fixa majoritariamente feminina (67%, incl. CEO)
 >
 > IMPACTO QUANTIFICADO
 > - 23 redes de ensino impactadas
@@ -414,17 +414,17 @@ Esta seção compila trechos retirados de 3 inscrições reais da Manacá em edi
 > - 114 negócios de impacto pesquisados
 > - 5 Teorias de Mudança elaboradas/revisadas
 >
-> CRESCIMENTO FINANCEIRO
-> - Faturamento: R$ 34.176 (2022) → R$ 94.093 (2023) → R$ 225.950 (2024) → R$ 125.630 (2025) → R$ 167.064 (2026 até mai)
-> - Faturamento total acumulado: R$ 646.915
-> - Crescimento médio anual: 140%
-> - Margem operacional: 24%
+> CRESCIMENTO FINANCEIRO (valores submetidos InovAtiva mai/2026)
+> - Faturamento: R$ 34.176 (2022) → R$ 94.093 (2023) → R$ 225.950 (2024) → R$ 125.630 (2025) → R$ 198.677 (2026 até mai)
+> - Faturamento últimos 12 meses: R$ 259.846,27
+> - Faturamento total acumulado (desde 2022): ~R$ 678 mil
+> - CAGR: ~75% a.a.
 >
-> CAPTAÇÃO VIA EDITAIS
-> - Total captado em subvenção: R$ 255.600
-> - Centelha ES + NIS (FAPES, 2023): R$ 130.000
-> - Seedes / Neo Ventures (2025): R$ 100.000
-> - Empreendedoras Tech / Sebrae/MDIC/ABDI/ITA (2025): R$ 26.000
+> CAPTAÇÃO NÃO-DILUTIVA (~R$ 358 mil — submetido InovAtiva)
+> - Subvenção estrita: R$ 255.600 (Centelha+NIS 2023 R$130k; Seedes 2025 R$100k; Empreendedoras Tech 2025 R$26k)
+> - Bolsas: Centelha R$26k, Empreendedoras Tech R$26k
+> - Premiações: Shell R$5k (2025); Prêmio Mudar/Ensina Brasil R$20k (2025)
+> - Aprovações 2026: Vai Tec/ADE Sampa R$52k
 >
 > RECONHECIMENTOS
 > - Selo "Projeto com Propósito" — PMI-ES (2026)
@@ -497,7 +497,7 @@ Esta seção compila trechos retirados de 3 inscrições reais da Manacá em edi
 
 > Mereço este reconhecimento porque decidi dar voz e visibilidade a quem transforma o Brasil. Hoje, iniciativas brilhantes morrem por não conseguirem provar o seu valor. A Manacá nasceu para ser essa ponte: unimos o trabalho de quem gera impacto real, no chão das comunidades, à tecnologia que destrava financiamentos e escala políticas públicas.
 >
-> Como mulher e liderança, construí um negócio sólido apenas com recurso próprio. Crescemos 140% ao ano, superamos R$ 646 mil em receita e já levamos nossas soluções a 14 municípios de 11 estados, tocando a realidade de mais de 41 mil estudantes em projetos educacionais. Fomos validados por grandes parceiros e reconhecidos globalmente no AI4GOOD da Brazil Conference em Harvard/MIT.
+> Como mulher e liderança, construí um negócio sólido apenas com recurso próprio. Crescemos a um CAGR de ~75% ao ano, superamos R$ 678 mil em receita acumulada e já levamos nossas soluções a 14 municípios de 11 estados, tocando a realidade de mais de 41 mil estudantes em projetos educacionais. Fomos validados por grandes parceiros e reconhecidos globalmente no AI4GOOD da Brazil Conference em Harvard/MIT.
 >
 > Não criei apenas uma empresa de tecnologia; criei um motor de oportunidades para o setor de impacto. Mereço o prêmio porque provo, na prática, que a inovação de ponta só faz sentido quando garante que o impacto no país seja visto, valorizado e multiplicado.
 
@@ -544,8 +544,10 @@ Padrões recorrentes em inscrições da CEO Rayssa que devem ser replicados quan
 
 Cada parágrafo deve ter ao menos **um número concreto**: R$, %, quantidade ou ano. Texto sem números soa como marketing, não como tração.
 
-✅ "Crescemos 140% ao ano, superamos R$ 646 mil em receita e já levamos nossas soluções a 14 municípios de 11 estados."
+✅ "Crescemos a um CAGR de ~75% ao ano, superamos R$ 678 mil em receita acumulada e já levamos nossas soluções a 14 municípios de 11 estados."
 ❌ "Crescemos muito nos últimos anos e estamos em vários estados do Brasil."
+
+> **Métrica de crescimento canônica:** **CAGR ~75% a.a.** (submetido InovAtiva mai/2026). Não usar mais o "140% ao ano" de rascunhos antigos (janela/base diferente, descontinuado).
 
 ### 14.2 Hierarquia de listas em "Resultados"
 
@@ -631,3 +633,33 @@ Caso real (abr/2026): a CEO escreveu "Sebrae/MDIC/ABDI" no doc PES e "Sebrae/MDI
 ### 15.8 ❌ TRL declarado sem evidência
 
 "TRL 7" sem tabela de evidências (número de clientes pagantes, métricas de uptime, datas de validação) é redutível pelo avaliador. Sempre acompanhar TRL com 2-3 evidências documentais.
+
+---
+
+## 16. Padrões vencedores — InovAtiva de Impacto 2026 (SAÍRA/Flora)
+
+> Fonte: formulário InovAtiva submetido em mai/2026 (texto **azul** = oficial; ver extrato em
+> `c:\Editais\editais\inovativa-impacto-2026\_inovativa-AZUL.md`). Estes são padrões de redação
+> de alto nível, já vetados pela CEO, reaproveitáveis em qualquer edital de impacto/inovação.
+
+### 16.1 "Impacto é engrenagem, não subproduto" (tese de mudança)
+Amarrar receita à geração de impacto de forma que **tirar o impacto inviabilize o negócio**.
+> "A receita gerada por ponto monitorado está diretamente indexada ao sucesso da triagem e do redirecionamento logístico do resíduo. […] Tirar o impacto socioambiental da nossa operação inviabiliza o negócio, pois o que o mercado compra é a infraestrutura para transformar dados dispersos em decisões verificáveis."
+
+### 16.2 Estrutura de 5 partes para "superioridade ao status quo"
+1. **Status quo** (como o problema é resolvido hoje, com tempos/custos: "ciclo de 24–72h, sem georreferenciamento") → 2. **Inovação técnica** (o que muda, quantificado: "5–30 min, redução de 1–2 ordens de magnitude") → 3. **Disrupção no modelo de negócio** (CPSI, assinatura por ponto) → 4. **Aplicabilidade adjacente** (B2B sem ramificar roadmap) → 5. **Posição competitiva** (concorrentes nomeados + por que não cobrem o problema).
+
+### 16.3 CPSI como instrumento replicável
+Enquadrar o CPSI (LC 182/2021) não como "um contrato", mas como **modelo jurídico replicável**: "cada novo município é um CPSI replicável, não uma venda tradicional". Sempre citar o caso Recife (dez/2025, R$50k MVP → até R$1,6 mi aceleração → até R$8 mi fornecimento) como prova de execução.
+
+### 16.4 "Propriedade da inteligência"
+Ao usar tecnologia aberta de base (YOLO, LLMs, cloud), deixar explícito que **a inteligência é proprietária**: "Usamos YOLO como arquitetura aberta de base — mas o modelo treinado, os pesos finais, o pipeline de inferência e a lógica de classificação são proprietários." Ancorar no **dataset proprietário** (10.000+ imagens, 12 categorias) e na **XAI com lineage de dado e citação de fonte**.
+
+### 16.5 Validação em três camadas
+Para "validação de mercado", combinar: (a) **piloto formal em ambiente real** (CPSI Recife, entregas técnicas listadas); (b) **receita recorrente diversificada** (3,5 anos, 14 clientes, CAGR ~75%, nomes-âncora: Suzano, Bracell, Fundo Vale, Instituto Arco, Ensina Brasil, Bbutton); (c) **reconhecimento externo** (AI4GOOD Harvard/MIT, CADIMPACTO Ouro, selos).
+
+### 16.6 "Escalar sem diluir o impacto"
+Três mecanismos: (1) **replicabilidade jurídico-financeira** (CPSI + verticais B2B regulatórios); (2) **padronização metodológica via Flora** (mesma régua de auditoria); (3) **rede de cooperativas locais fortalecida, não substituída** ("a receita B2B premium não dilui o impacto: ela o financia"). Vetor regulatório citado em cada vertical (PNRS, logística reversa, Novo Marco do Saneamento) para mostrar **demanda recorrente compulsória**.
+
+### 16.7 Convenção de cor no Caderno de Preenchimento (lição operacional)
+No InovAtiva, a CEO usou **azul = texto final submetido**, deixando versões alternativas (prosa longa, condensada) em outras cores. **Lição:** ao montar Caderno com múltiplas versões de uma resposta, marcar a versão final em cor única acordada — e, ao extrair "o que foi submetido", filtrar só essa cor (a API do Google Docs expõe `foregroundColor`; o export markdown perde a cor).
