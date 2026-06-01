@@ -634,6 +634,16 @@ Caso real (abr/2026): a CEO escreveu "Sebrae/MDIC/ABDI" no doc PES e "Sebrae/MDI
 
 "TRL 7" sem tabela de evidências (número de clientes pagantes, métricas de uptime, datas de validação) é redutível pelo avaliador. Sempre acompanhar TRL com 2-3 evidências documentais.
 
+### 15.9 ❌ Quantidade exata de clientes e faturamento explícito (REGRA — confirmada mai/2026)
+
+**Não declarar a quantidade exata de clientes nem o faturamento/receita explícitos da Manacá/Flora** em propostas/formulários de edital. Usar sempre fraseado **qualitativo**:
+
+- ✅ "base recorrente de clientes pagantes", "carteira diversificada de clientes", "crescimento sustentado de receita ao longo de 3,5 anos"
+- ❌ "14 clientes pagantes", "receita acumulada de R$ 678 mil", "CAGR de ~75% a.a.", "faturamento de R$ X"
+
+**Por quê:** dados sensíveis/competitivos, que envelhecem rápido e expõem a empresa a escrutínio desnecessário em texto de proposta. Exceção: quando o **campo do formulário pede explicitamente** o número (ex.: campo "faturamento dos últimos 12 meses", "nº de clientes") — aí preencher com o valor canônico de `empresa-manaca.md`. A regra vale para o **corpo narrativo**, não para campos estruturados que exigem o número.
+> Pode citar livremente: **projetos entregues** (track record de entrega), nomes de clientes-âncora com contexto (Suzano, Bracell, etc.), prêmios e o histórico do SAÍRA-CPSI.
+
 ---
 
 ## 16. Padrões vencedores — InovAtiva de Impacto 2026 (SAÍRA/Flora)
